@@ -12,7 +12,16 @@
           <Bars3Icon class="size-6" aria-hidden="true" />
         </button>
         <div class="hidden lg:ml-12 lg:flex lg:gap-x-14 lg:visible">
-          <NuxtLink v-for="item in props.navigation" :key="item.name" :to="item.href" class="text-sm/6 font-semibold text-text">{{ item.name }}</NuxtLink>
+          <div  v-for="item in props.navigation" :key="item.name"  class="flex flex-col">
+            <NuxtLink
+                :to="item.href"
+                class="text-sm/6 font-semibold "
+                :class="navClass(item)">
+              {{ item.name }}
+            </NuxtLink>
+            <div class="border-b-2 border-b-accent-2" :class="navBorderClass(item)"></div>
+          </div>
+
 
         </div>
       </nav>
@@ -26,6 +35,10 @@ const props = defineProps({
   title: {type: String, required: true},
   logo: {type: String, required: true},
 })
+
+const route = useRoute()
+const navBorderClass = (item) =>  route.name === item.route ? 'visible' : 'hidden'
+const navClass = (item)  =>  route.name === item.route ? 'text-accent-2' : 'text-text'
 
 const mobileMenuOpen = inject("mobileMenuOpen")
 </script>

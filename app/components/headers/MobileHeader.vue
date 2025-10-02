@@ -16,7 +16,16 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y ">
           <div class="space-y-2 py-6">
-            <NuxtLink @click="mobileMenuOpen = false" v-for="item in props.navigation" :key="item.name" :to="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-app">{{ item.name }}</NuxtLink>
+            <div v-for="item in props.navigation" :key="item.name" :to="item.href" class="flex flex-col">
+              <NuxtLink
+                  @click="mobileMenuOpen = false"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold "
+                  :class="navClass(item)">
+                {{ item.name }}
+              </NuxtLink>
+              <div class="border-b-2 border-b-accent-2" :class="navBorderClass(item)"></div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -34,5 +43,8 @@ const props = defineProps({
   logo: {type: String, required: true},
 })
 
+const route = useRoute()
+const navBorderClass = (item) =>  route.name === item.route ? 'visible' : 'hidden'
+const navClass = (item)  =>  route.name === item.route ? 'text-accent-2' : 'text-text'
 const mobileMenuOpen = inject("mobileMenuOpen")
 </script>
