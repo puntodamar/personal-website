@@ -6,7 +6,7 @@
 
 <script setup>
 useHead({
-  htmlAttrs: { class: 'dark' },
+  // htmlAttrs: { class: 'dark' },
   bodyAttrs: { class: 'antialiased' }
 })
 </script>
