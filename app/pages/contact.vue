@@ -1,3 +1,53 @@
 <template>
-  <div class="pt-14 px-6 mx-auto mt-20 max-w-7xl">Contact Me</div>
+  <div class="pt-14 px-6 mx-auto max-w-7xl">
+
+    <div class="flex flex-col items-center justify-center h-screen lg:items-start">
+      <div class="md:my-auto lg:my-0">
+        <h1 class="text-5xl font-semibold tracking-tight text-pretty text-accent-2 sm:text-7xl text-center lg:text-left">
+          Contact Me
+        </h1>
+
+
+        <dl class="w-full mt-15   divide-y divide-black/10 rounded-xl bg-bg text-app shadow-sm">
+
+          <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-6 py-3" v-for="d in data" :key="d.field">
+            <dt class="lg:basis-40 lg:shrink-0 font-semibold">{{d.field}}</dt>
+            <dd class="break-words">
+              <a :href="href(d)" class=" underline-offset-2 font-light hover:font-medium">
+                {{d.value}}
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+
+    </div>
+
+    <portrait/>
+  </div>
 </template>
+<script setup>
+import Portrait from "~/components/Portrait.vue";
+
+const data = [
+  {field: "Email", value: "punto.damar2@gmail.com"},
+  {field: "Phone", value: "+6285729084638"},
+  {field: "LinkedIn", value: "https://www.linkedin.com/in/punto-damar-p-6b11b0107/"},
+  {field: "Address", value: "Banguntapan, Bantul, D.I. Yogyakarta, Indonesia"},
+]
+
+const href = (d) => {
+  switch (d.field) {
+    case "Email":
+      return `mailto:${d.email}`;
+      case "Phone":
+        return '#';
+      case "LinkedIn":
+        return d.value;
+
+  }
+}
+
+useSeoMeta({ title: "Punto Damar | Contact" })
+</script>
