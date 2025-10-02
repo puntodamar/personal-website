@@ -16,10 +16,7 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y ">
           <div class="space-y-2 py-6">
-            <a v-for="item in props.navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-app">{{ item.name }}</a>
-          </div>
-          <div class="py-6">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-app">Log in</a>
+            <NuxtLink @click="mobileMenuOpen = false" v-for="item in props.navigation" :key="item.name" :to="item.href" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-app">{{ item.name }}</NuxtLink>
           </div>
         </div>
       </div>

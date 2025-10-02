@@ -12,7 +12,8 @@
           <Bars3Icon class="size-6" aria-hidden="true" />
         </button>
         <div class="hidden lg:ml-12 lg:flex lg:gap-x-14 lg:visible">
-          <a v-for="item in props.navigation" :key="item.name" :href="item.href" class="text-sm/6 font-semibold text-text">{{ item.name }}</a>
+          <NuxtLink v-for="item in props.navigation" :key="item.name" :to="item.href" class="text-sm/6 font-semibold text-text">{{ item.name }}</NuxtLink>
+
         </div>
       </nav>
     </div>
