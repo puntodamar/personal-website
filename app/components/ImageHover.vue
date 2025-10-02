@@ -1,7 +1,8 @@
 <template>
-  <div class="flex flex-col items-center justify-center gap-y-2 group ">
-    <img class="size-7 object-contain group-hover:cursor-pointer" :src="props.src" :alt="props.text">
-    <div class="text-accent text-center text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+
+  <div class="relative aspect-square w-8 flex items-center justify-center group ">
+    <img :src="src" :alt="text" class="max-w-[80%] max-h-[80%] object-contain group-hover:cursor-pointer">
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-20 text-accent text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-2 py-1 rounded-lg">
       {{ props.text }}
     </div>
   </div>
