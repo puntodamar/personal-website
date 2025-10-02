@@ -1,9 +1,16 @@
 <template>
   <div class="mx-auto max-w-7xl">
-    <div class="relative z-10 pt-14 w-full px-6 lg:px-0 sm:max-w-lg md:w-screen sm:mx-auto sm:text-center lg:max-w-2xl lg:mx-0 lg:text-left">
+    <div class="relative z-10 pt-5 lg:pt-14 w-full px-6 lg:px-0 sm:max-w-lg md:w-screen sm:mx-auto sm:text-center lg:max-w-2xl lg:mx-0 lg:text-left">
 
-      <div class="relative mx-6 my-auto h-screen md:mt-20 lg:mt-0 flex items-center">
+      <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
         <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
+          <div class="mx-auto size-30 mb-10 overflow-hidden rounded-full outline-[0.1rem] outline-heading lg:hidden">
+            <img
+                src="/portrait-head.png"
+                alt="portrait"
+                class="w-auto object-cover drop-shadow-xl"
+            />
+          </div>
           <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
 <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
           <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">

@@ -11,13 +11,15 @@
     </div>
   </div>
 
-  <div class="absolute lg:hidden bottom-0 right-0 flex items-center justify-center">
+  <div class="absolute inset-x-0 bottom-0 lg:hidden overflow-hidden flex items-center justify-center">
     <img
         src="/photo-full-downsized.png"
         alt="portrait"
-        class="w-auto object-cover drop-shadow-xl opacity-10"
+        class="relative max-w-none w-[140%] translate-x-24 translate-y-16 object-contain drop-shadow-xl opacity-5 dark:opacity-3"
     />
   </div>
+
+
 </template>
 <script setup lang="ts">
 </script>
