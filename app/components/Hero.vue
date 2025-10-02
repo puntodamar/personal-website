@@ -4,7 +4,7 @@
 
       <div class="relative mx-6 my-auto h-screen md:mt-20 lg:mt-0 flex items-center">
         <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
-          <h1 class="text-5xl font-semibold tracking-tight text-pretty text-black dark:text-accent-2 sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
+          <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
 <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
           <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
             A fullstack engineer who always strive for the best and hungry for new knowledge.

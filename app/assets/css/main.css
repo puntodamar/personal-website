@@ -12,11 +12,12 @@
 
 
     --color-bg: #FAF9F6;
+
     --color-text: #0F1428;
     --color-secondary: #3A3E4F;
     --color-accent: #3B82F6;
     --color-accent-2: #F59E0B;
-
+    --color-heading: #0F1428;
 }
 
 
@@ -27,6 +28,7 @@
     --color-secondary: #D1D5DB;
     --color-accent: #60A5FA;
     --color-accent-2: #FBBF24;
+    --color-heading: #F59E0B;
 }
 
 @utility font-heading { font-family: var(--font-heading); }
