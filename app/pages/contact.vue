@@ -8,12 +8,12 @@
         </h1>
 
 
-        <dl class="w-full mt-15   divide-y divide-black/10 rounded-xl bg-bg text-app shadow-sm">
+        <dl class="w-full mt-15   divide-y divide-app/10 rounded-xl bg-bg text-app">
 
           <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-6 py-3" v-for="d in data" :key="d.field">
             <dt class="lg:basis-40 lg:shrink-0 font-semibold">{{d.field}}</dt>
             <dd class="break-words">
-              <a :href="href(d)" class=" underline-offset-2 font-light hover:font-medium">
+              <a :href="href(d)" class=" underline-offset-2 font-light hover:text-accent-2">
                 {{d.value}}
               </a>
             </dd>
@@ -34,7 +34,7 @@ const data = [
   {field: "Email", value: "punto.damar2@gmail.com"},
   {field: "Phone", value: "+6285729084638"},
   {field: "LinkedIn", value: "https://www.linkedin.com/in/punto-damar-p-6b11b0107/"},
-  {field: "Address", value: "Banguntapan, Bantul, D.I. Yogyakarta, Indonesia"},
+  {field: "Address", value: "Bantul, D.I. Yogyakarta, Indonesia"},
 ]
 
 const href = (d) => {
