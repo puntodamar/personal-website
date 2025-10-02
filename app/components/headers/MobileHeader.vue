@@ -3,11 +3,11 @@
     <div class="fixed inset-0 z-50" />
     <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-app p-6 sm:max-w-sm">
       <div class="flex items-center justify-between">
-        <a href="#" class="-m-1.5 p-1.5">
+        <NuxtLink href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">={{props.title}}</span>
           <img class="h-8 w-auto dark:hidden" :src="props.logo"  alt="" />
           <img class="h-8 w-auto not-dark:hidden" :src="props.logo" alt="" />
-        </a>
+        </NuxtLink>
         <button type="button" class="-m-2.5 rounded-md p-2.5 text-app hover:cursor-pointer" @click="mobileMenuOpen = false">
           <span class="sr-only">Close menu</span>
           <XMarkIcon class="size-6" aria-hidden="true" />
