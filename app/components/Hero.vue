@@ -4,9 +4,9 @@
 
       <div class="relative mx-6 my-auto h-screen md:mt-20 lg:mt-0 flex items-center">
         <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
-          <h1 class="text-5xl font-semibold tracking-tight text-pretty text-app sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
-          <div class="border-b-2 md:border-b-5 border-accent-2 mt-5 max-w-100 mx-auto lg:mx-0"></div>
-          <p class="mt-8 text-lg font-medium text-pretty text-app sm:text-xl/8 text-center lg:text-left">
+          <h1 class="text-5xl font-semibold tracking-tight text-pretty text-black dark:text-accent-2 sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
+<!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
+          <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
             A fullstack engineer who always strive for the best and hungry for new knowledge.
           </p>
 
@@ -36,29 +36,11 @@
     </div>
   </div>
 
-  <div class="pointer-events-none hidden md:block absolute inset-y-0 right-0 w-1/2">
-    <div class="h-full hidden lg:block bg-gray-800 [clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]">
-      <div class="absolute  bottom-0 xl:top-20 lg:flex lg:items-center lg:justify-center">
-        <img
-            src="/photo-full-downsized.png"
-            alt="portrait"
-            class="w-auto object-cover drop-shadow-xl opacity-10 lg:opacity-100"
-        />
-      </div>
-    </div>
-  </div>
-
-  <div class="absolute lg:hidden bottom-0 right-0 flex items-center justify-center">
-    <img
-        src="/photo-full-downsized.png"
-        alt="portrait"
-        class="w-auto object-cover drop-shadow-xl opacity-10"
-    />
-  </div>
+  <portrait/>
 </template>
 
 <script setup>
 
-  import TheHeader from "~/components/headers/TheHeader.vue";
   import ImageHover from "~/components/ImageHover.vue";
+  import Portrait from "~/components/Portrait.vue";
 </script>
