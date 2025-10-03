@@ -7,6 +7,7 @@
   useSeoMeta({ title: "Punto Damar | About Me" })
   definePageMeta({
     overflowHidden : true,
+
   })
   import Hero from "~/components/Hero.vue";
 </script>

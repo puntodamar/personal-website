@@ -1,4 +1,5 @@
 <template>
+
   <div class="pt-14 px-8 mt-20 mx-auto max-w-7xl pb-20">
     <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left">
       Experience
@@ -10,13 +11,13 @@
           :key="c.name"
           class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-16 md:gap-y-0"
       >
-        <!-- LEFT: sticky on md+; centered on mobile -->
+
         <aside class="min-w-0 self-start md:sticky md:top-16 md:col-span-4">
           <div class="flex flex-col min-w-0 items-center md:items-start text-center md:text-left gap-y-5">
             <!-- logos -->
-            <img :src="c.logo" class="size-8 md:hidden" />
+            <img :src="c.logo" class="size-8 lg:hidden" />
             <div class="flex flex-col items-center gap-y-3 md:flex-row md:items-start md:gap-x-5 w-full">
-              <img :src="c.logo" class="size-20 hidden md:block" />
+              <img :src="c.logo" class="size-20 hidden lg:block" />
               <div class="w-full md:w-auto">
                 <h2 class="font-semibold text-xl text-accent">
                   <a :href="c.href" target="_blank">
@@ -66,7 +67,9 @@ const drawerOpen = ref(false)
 provide('drawerOpen', drawerOpen)
 
 const openDrawer = () => drawerOpen.value = !drawerOpen.value
-
+definePageMeta({
+  accentFillColor: 'fill-bg',
+})
 
 
 const companies = [

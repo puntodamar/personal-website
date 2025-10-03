@@ -1,3 +1,4 @@
+@config "../../../tailwind.config.js";
 @import "tailwindcss";
 
 
@@ -18,12 +19,14 @@
     --color-accent: #3B82F6;
     --color-accent-2: #F59E0B;
     --color-heading: #0F1428;
+    --color-accent-bg: #D1D5DB
 }
 
 
 :root.dark,
 .dark {
     --color-bg: #101828;
+    --color-accent-bg: oklch(13% 0.028 261.692);
     --color-text: #FAF9F6;
     --color-secondary: #D1D5DB;
     --color-accent: #60A5FA;
