@@ -3,13 +3,13 @@
     <desktop-header
         :navigation="navigation"
         :title="appConfig.site.title"
-        :logo="appConfig.site.nuxtLogo"
+        :logo="appConfig.site.logo.nuxt"
     />
 
     <mobile-header
         :navigation="navigation"
         :title="appConfig.site.title"
-        :logo="appConfig.site.nuxtLogo"
+        :logo="appConfig.site.logo.nuxt"
     />
 
     <page-theme class="absolute top-6 right-20"/>
@@ -29,7 +29,7 @@ const props = defineProps({
 const headerClasses = computed(() => props.absolute ? 'inset-x-0 top-0 z-50 absolute' : 'inset-x-0 top-0 z-50' )
 const navigation = [
   { name: 'About Me', href: '/', route: 'index' },
-  { name: 'Experience', href: '#', route: 'experience' },
+  { name: 'Experience', href: '/experience', route: 'experience' },
   { name: 'Side Projects', href: '#', route: 'projects' },
   { name: 'Contact', href: '/contact', route: 'contact' },
 ]

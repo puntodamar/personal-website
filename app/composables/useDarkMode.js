@@ -43,7 +43,7 @@ export function useDarkMode() {
         else if (mql.addListener) mql.addListener(handleSystemChange) // Safari <14
     })
 
-    const toggle   = () => (isDark.value = !isDark.value) 
+    const toggle   = () => (isDark.value = !isDark.value)
     const setDark  = () => (isDark.value = true)
     const setLight = () => (isDark.value = false)
     const clearPreference = () => localStorage.removeItem('color-theme')

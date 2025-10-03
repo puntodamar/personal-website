@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl">
+  <div class=" mx-auto max-w-7xl">
     <div class="px-6 pt-6 lg:max-w-2xl lg:pr-0 lg:pl-8">
       <nav class="flex items-center justify-between lg:justify-start" aria-label="Global">
         <NuxtLink href="/" class="-m-1.5 p-1.5">

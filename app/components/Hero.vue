@@ -27,13 +27,13 @@
           <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">
 
             <!--                <img class="size-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/330px-PHP-logo.svg.png" alt="php">-->
-            <image-hover text="Golang" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Go_gopher_mascot_bw.png/250px-Go_gopher_mascot_bw.png"/>
-            <image-hover text="Nuxt" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/330px-Nuxt_logo.svg.png"/>
-            <image-hover text="Tailwind CSS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/330px-Tailwind_CSS_Logo.svg.png"/>
-            <image-hover text="Vue.js" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/330px-Vue.js_Logo_2.svg.png"/>
-            <image-hover text="Ruby on Rails" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png"/>
-            <image-hover text="Typescript" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/250px-Typescript_logo_2020.svg.png"/>
-            <image-hover text="React.js" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/330px-React-icon.svg.png"/>
+            <image-hover text="Golang" :src="appConfig.site.logo.golang"/>
+            <image-hover text="Nuxt" :src="appConfig.site.logo.nuxt"/>
+            <image-hover text="Tailwind CSS" :src="appConfig.site.logo.tailwind"/>
+            <image-hover text="Vue.js" :src="appConfig.site.logo.vue"/>
+            <image-hover text="Ruby on Rails" :src="appConfig.site.logo.rails"/>
+            <image-hover text="Typescript" :src="appConfig.site.logo.typescript"/>
+            <image-hover text="React.js" :src="appConfig.site.logo.react"/>
 
             <!--                <img class="size-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png" alt="ruby">-->
 
@@ -50,4 +50,6 @@
 
   import ImageHover from "~/components/ImageHover.vue";
   import Portrait from "~/components/Portrait.vue";
+
+  const appConfig = useAppConfig();
 </script>

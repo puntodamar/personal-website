@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-14 px-6 mx-auto max-w-7xl">
+  <div class="pt-14 px-8 mx-auto max-w-7xl">
 
     <div class="flex flex-col items-center justify-center h-screen lg:items-start">
       <div class="md:my-auto lg:my-0">
