@@ -22,7 +22,10 @@ export default defineAppConfig({
             docker: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Docker_%28container_engine%29_logo_%28cropped%29.png",
             jenkins: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/174px-Jenkins_logo.svg.png",
             privy: "https://avatars.githubusercontent.com/u/65682198?s=200&v=4",
-            technopartner: "/technopartner.png"
+            technopartner: "/technopartner.png",
+            laravel: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+            jquery: "https://icon.icepanel.io/Technology/svg/jQuery.svg",
+            mysql: "https://upload.wikimedia.org/wikipedia/commons/archive/5/51/20220908220043%21Mysql.svg"
 
         }
     }

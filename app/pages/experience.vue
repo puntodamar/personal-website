@@ -8,11 +8,11 @@
       <div
           v-for="c in companies"
           :key="c.name"
-          class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-16"
+          class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-16 md:gap-y-0"
       >
         <!-- LEFT: sticky on md+; centered on mobile -->
         <aside class="min-w-0 self-start md:sticky md:top-16 md:col-span-4">
-          <div class="flex flex-col min-w-0 items-center md:items-start text-center md:text-left gap-y-5 md:gap-y-20">
+          <div class="flex flex-col min-w-0 items-center md:items-start text-center md:text-left gap-y-5">
             <!-- logos -->
             <img :src="c.logo" class="size-8 md:hidden" />
             <div class="flex flex-col items-center gap-y-3 md:flex-row md:items-start md:gap-x-5 w-full">
@@ -29,7 +29,7 @@
             </div>
 
             <!-- tech stack -->
-            <div v-if="c.techStacks?.length" class="mt-8 flex flex-wrap gap-5 justify-center md:justify-start max-w-full">
+            <div v-if="c.techStacks?.length" class="mt-8 md:mt-0 flex flex-wrap gap-5 justify-center md:justify-start max-w-full">
               <image-hover
                   v-for="(tech, i) in c.techStacks"
                   :key="i"
@@ -37,19 +37,14 @@
                   :text="tech.text"
               />
             </div>
-
-<!--            <div class="relative z-50 pointer-events-auto">-->
-<!--              <button @click="openDrawer">Detail</button>-->
-<!--            </div>-->
           </div>
         </aside>
 
-        <!-- RIGHT: long content (drives page scroll) -->
         <article class="min-w-0 md:col-span-8">
           <p
               v-for="i in 20"
               :key="i"
-              class="mt-5 text-text text-pretty whitespace-normal break-words [hyphens:auto]"
+              class="mt-5 text-text text-center md:text-left text-pretty whitespace-normal break-words [hyphens:auto]"
           >
             {{ c.description }}
           </p>
@@ -70,10 +65,7 @@ const appConfig = useAppConfig()
 const drawerOpen = ref(false)
 provide('drawerOpen', drawerOpen)
 
-const openDrawer = () => {
-  drawerOpen.value = !drawerOpen.value
-  console.log(drawerOpen.value)
-}
+const openDrawer = () => drawerOpen.value = !drawerOpen.value
 
 
 
@@ -110,6 +102,11 @@ const companies = [
     yearsOfEmployment: "Jun 2016 - Jul 2017",
     role: "Fullstack Engineer",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam illum iste iusto laudantium nam obcaecati quibusdam quo reiciendis, soluta. Cum distinctio exercitationem modi odio odit soluta. Cupiditate, eveniet, laborum.",
+    techStacks: [
+      {text: "Laravel", logo: appConfig.site.logo.laravel},
+      {text: "jQuery", logo: appConfig.site.logo.jquery},
+      {text: "MySQL", logo: appConfig.site.logo.mysql},
+    ]
   }
 ]
 </script>
