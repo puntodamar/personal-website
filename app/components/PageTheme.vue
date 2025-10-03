@@ -8,14 +8,14 @@
 
 import { useDarkMode } from '@/composables/useDarkMode.js';
 import { useRippleToggle } from '@/composables/useRippleToggle.js';
-import {SunIcon, MoonIcon} from "@heroicons/vue/24/outline";
+import {SunIcon, MoonIcon} from "@heroicons/vue/24/solid";
 const { isDark, toggle } = useDarkMode()
 
 const buttonClasses = computed(() => `float-right rounded-lg p-2 outline-1 ${props.bg} ${props.text}`)
 
 const props = defineProps({
-  bg: {type: String, default: 'bg-bg'},
-  text: {type: String, default: 'text-app'},
+  bg: {type: String, default: 'bg-[#101828] dark:bg-[#FAF9F6]'},
+  text: {type: String, default: 'text-[#FAF9F6] dark:text-[#101828]'},
 })
 
 
