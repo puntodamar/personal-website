@@ -22,7 +22,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                    <div class="relative mt-6 flex-1 px-4 sm:px-6 mb-20">
                       <article v-html="drawer.company.description" class="prose"></article>
                     </div>
                   </div>

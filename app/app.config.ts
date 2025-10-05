@@ -28,7 +28,12 @@ export default defineAppConfig({
             mysql: "https://upload.wikimedia.org/wikipedia/commons/archive/5/51/20220908220043%21Mysql.svg",
             bootstrap: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/330px-Bootstrap_logo.svg.png",
             github: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-            linkedin: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+            linkedin: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg",
+            gamelan: "/gamelan.png",
+            bikingame: "/bikingame.png",
+            unity: "/unity.png",
+            construct: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Construct_3_Logo.svg/250px-Construct_3_Logo.svg.png",
+            csharp: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/250px-Logo_C_sharp.svg.png"
 
         }
     }

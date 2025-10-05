@@ -1,9 +1,7 @@
 @config "../../../tailwind.config.js";
 @import "tailwindcss";
 
-
 @theme {
-
     --font-sans: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
@@ -11,20 +9,28 @@
     --font-heading: "Poppins", "Roboto", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 
-
     --color-bg: #FAF9F6;
 
     --color-text: #0F1428;
     --color-secondary: #3A3E4F;
     --color-accent: #3B82F6;
+    --color-navy: #0A1F44;
     --color-accent-2: #F59E0B;
     --color-heading: #0F1428;
-    --color-accent-bg: #D1D5DB
+    --color-accent-bg: #D1D5DB;
+
+
+    --radius-pill: 9999px;
+}
+
+:root {
+    --link: var(--color-blue-700);
 }
 
 
 :root.dark,
 .dark {
+    --link: var(--color-accent);
     --color-bg: #101828;
     --color-accent-bg: oklch(13% 0.028 261.692);
     --color-text: #FAF9F6;
@@ -38,8 +44,16 @@
 @utility bg-app      { background-color: var(--color-bg); }
 @utility text-app    { color: var(--color-text); }
 
+@layer base {
+    a { color: var(--link); }
+}
+
+
 .btn-primary {
     @apply inline-flex items-center justify-center rounded-[--radius-pill] px-5 py-3
-    bg-secondary text-bg font-semibold transition rounded-md
+    font-semibold transition rounded-md
     hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60;
+    
+    background-color: var(--color-secondary);
+    color: var(--color-bg);
 }
