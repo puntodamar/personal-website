@@ -23,11 +23,14 @@
             <p class="mt-5 md:mt-0 lg:mt-5">Able to build systems that scale and perform reliably under high usage.</p>
           </div>
 
-
-          <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">
-            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>
-            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>
+          <div class="flex flex-row justify-center md:justify-start mt-20 gap-2 md:gap-5">
+              <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>
+              <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>
           </div>
+<!--          <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">-->
+<!--            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>-->
+<!--            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>-->
+<!--          </div>-->
         </div>
       </div>
     </div>
