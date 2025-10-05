@@ -15,7 +15,7 @@
     <img
         src="/photo-full-downsized.png"
         alt="portrait"
-        class="relative max-w-none w-[140%] translate-x-24 translate-y-16 object-contain drop-shadow-xl opacity-5 dark:opacity-3"
+        class="relative max-w-none w-[140%] translate-x-24 translate-y-16 object-contain drop-shadow-xl opacity-5 dark:opacity-5"
     />
   </div>
 
