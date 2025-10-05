@@ -16,11 +16,12 @@
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y ">
           <div class="space-y-2 py-6">
-            <div v-for="item in props.navigation" :key="item.name" :to="item.href" class="flex flex-col">
+            <div v-for="item in props.navigation" :key="item.name" class="flex flex-col">
               <NuxtLink
                   @click="mobileMenuOpen = false"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold "
-                  :class="navClass(item)">
+                  :class="navClass(item)"
+                  :to="item.href" >
                 {{ item.name }}
               </NuxtLink>
               <div class="border-b-2 border-b-accent-2" :class="navBorderClass(item)"></div>

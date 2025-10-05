@@ -30,7 +30,7 @@ const headerClasses = computed(() => props.absolute ? 'inset-x-0 top-0 z-50 abso
 const navigation = [
   { name: 'About Me', href: '/', route: 'index' },
   { name: 'Experience', href: '/experience', route: 'experience' },
-  { name: 'Side Projects', href: '#', route: 'projects' },
+  { name: 'Side Projects', href: '/side-projects', route: 'side-projects' },
   { name: 'Contact', href: '/contact', route: 'contact' },
 ]
 

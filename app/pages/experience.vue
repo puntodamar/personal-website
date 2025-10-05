@@ -89,9 +89,9 @@ const companies = [
         "          <div class=\"text-text text-pretty\">\n" +
         "            <p>\n" +
         "              Privy is Indonesia's pioneer in digital signature and identity solutions. <br/>In my early years, I was working on standalone projects for clients who wanted to integrate Privy's digital signature solutions but do not have the manpower to do it.\n" +
-        "              As a backend, I built the APIs for both front end or mobile app. Most of our works was for credit card applications such as Mandiri, CIMB, and BNI.\n" +
-        "              My responsibilites are often related to dashboard and user registration. The general flow is: a customer will select their preffered card and fill in their personal info.\n" +
-        "              Then, I use our internal registration API and generate a PDF containing the paperwork -- where the user will automatically sign it.\n" +
+        "              As a backend, I built the APIs for both front end and mobile app. Most of our works was for credit card applications such as Mandiri, CIMB, and BNI.\n" +
+        "              My responsibilites are often related to dashboard, user registration, and document signing. The general flow is: a customer will select their preffered card and fill in their personal info.\n" +
+        "              Then, I use our internal registration API and generate a PDF containing the paperwork -- where the user will automatically sign it once they are registered.\n" +
         "            </p>\n" +
         "\n" +
         "            <br/>\n" +
@@ -105,7 +105,7 @@ const companies = [
         "              After around 2 years, the company feel that it's ineffective to have dedicated manpower to handle each and every client applications.\n" +
         "              So, we formed a team aiming to  reduce both the manpower needed and the development time from at least 2-3 months in no time at all.\n" +
         "              The team and I made a templating application. A customizable, premade application that will cater every clients' user registration and document signing requirements.\n" +
-        "              Thanks to the effort of the middleware team, I believe it grew to become one of the company's biggest revenue generating application.\n" +
+        "              Thanks to the effort of the whole team, I believe it grew to become one of the company's biggest revenue generating application.\n" +
         "              It managed to handle hundreds of clients with throughput as high as <span class=\"underline\">1000 RPM</span> per client.\n" +
         "            </p>\n" +
         "\n" +
@@ -176,7 +176,7 @@ const companies = [
     name: "BikinGame.com",
     logo: appConfig.site.logo.bikingame,
     href: "https://www.facebook.com/bikingame",
-    yearsOfEmployment: "2015 - 2018",
+    yearsOfEmployment: "2015 - 2020",
     role: "Owner",
     description: "          <div class=\"text-pretty text-text\"><h5 class=\"font-bold text-heading\">Overview</h5>\n" +
         "            <p>\n" +

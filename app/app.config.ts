@@ -33,7 +33,9 @@ export default defineAppConfig({
             bikingame: "/bikingame.png",
             unity: "/unity.png",
             construct: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Construct_3_Logo.svg/250px-Construct_3_Logo.svg.png",
-            csharp: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/250px-Logo_C_sharp.svg.png"
+            csharp: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/250px-Logo_C_sharp.svg.png",
+            smashsports: "/smashsports.png",
+            inertia: "https://inertiajs.com/favicon.ico",
 
         }
     }
