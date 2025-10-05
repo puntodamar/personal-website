@@ -1,7 +1,7 @@
 <template>
   <div>
-    <TransitionRoot as="template" :show="drawerOpen">
-      <Dialog class="relative z-100" @close="drawerOpen = false">
+    <TransitionRoot as="template" :show="drawer.open">
+      <Dialog class="relative z-100" @close="drawer.open = false">
         <div class="fixed inset-0" />
 
         <div class="fixed inset-0 overflow-hidden">
@@ -12,9 +12,9 @@
                   <div class="relative flex h-full flex-col overflow-y-auto bg-white py-6 shadow-xl dark:bg-gray-800 dark:after:absolute dark:after:inset-y-0 dark:after:left-0 dark:after:w-px dark:after:bg-white/10">
                     <div class="px-4 sm:px-6">
                       <div class="flex items-start justify-between">
-                        <DialogTitle class="text-base font-semibold text-gray-900 dark:text-white">Panel title</DialogTitle>
+                        <DialogTitle class="text-base font-semibold text-gray-900 dark:text-white">{{drawer.company.name}}</DialogTitle>
                         <div class="ml-3 flex h-7 items-center">
-                          <button type="button" class="relative rounded-md text-gray-400 hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:hover:text-white dark:focus-visible:outline-indigo-500" @click="drawerOpen = false">
+                          <button type="button" class="relative rounded-md text-gray-400 hover:text-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:hover:text-white dark:focus-visible:outline-indigo-500" @click="drawer.open = false">
                             <span class="absolute -inset-2.5" />
                             <span class="sr-only">Close panel</span>
                             <XMarkIcon class="size-6" aria-hidden="true" />
@@ -23,7 +23,7 @@
                       </div>
                     </div>
                     <div class="relative mt-6 flex-1 px-4 sm:px-6">
-                      <!-- Your content -->
+                      <article v-html="drawer.company.description" class="prose"></article>
                     </div>
                   </div>
                 </DialogPanel>
@@ -37,10 +37,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+
 import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import { XMarkIcon } from '@heroicons/vue/24/outline'
 
-const drawerOpen = inject('drawerOpen')
+const drawer = inject('drawer')
 
 </script>

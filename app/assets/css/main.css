@@ -37,3 +37,9 @@
 @utility font-heading { font-family: var(--font-heading); }
 @utility bg-app      { background-color: var(--color-bg); }
 @utility text-app    { color: var(--color-text); }
+
+.btn-primary {
+    @apply inline-flex items-center justify-center rounded-[--radius-pill] px-5 py-3
+    bg-secondary text-bg font-semibold transition rounded-md
+    hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60;
+}

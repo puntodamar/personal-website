@@ -7,8 +7,8 @@
 
     <section class="mx-auto max-w-7xl px-6">
       <div
-          v-for="c in companies"
-          :key="c.name"
+          v-for="(c,i) in companies"
+          :key="c.i"
           class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-16 md:gap-y-0"
       >
 
@@ -38,15 +38,18 @@
               />
             </div>
           </div>
+
+          <div class="flex flex-row items-center justify-center mt-10 md:hidden">
+            <button class="btn-primary text-xs" @click="openDrawer(i)">Details</button>
+          </div>
+
         </aside>
 
-        <article class="min-w-0 md:col-span-8" v-html="c.description">
-
-        </article>
+        <article class="min-w-0 hidden md:block md:col-span-8 prose" v-html="c.description"/>
       </div>
     </section>
 
-    <drawer></drawer>
+    <drawer/>
 
 
 
@@ -56,10 +59,19 @@
 import {ArrowTopRightOnSquareIcon} from "@heroicons/vue/24/outline";
 useSeoMeta({ title: "Punto Damar | Experience" })
 const appConfig = useAppConfig()
-const drawerOpen = ref(false)
-provide('drawerOpen', drawerOpen)
+const drawerContent = reactive({open: false, company: null})
+provide('drawer', drawerContent)
 
-const openDrawer = () => drawerOpen.value = !drawerOpen.value
+
+const openDrawer = (index) => {
+
+  drawerContent.open = !drawerContent.open
+
+  if(drawerContent.open === true) {
+    drawerContent.company = companies[index]
+    console.log(drawerContent.company)
+  }
+}
 definePageMeta({
   accentFillColor: 'fill-bg',
 })
@@ -75,7 +87,7 @@ const companies = [
     description: "          <h5 class=\"text-heading font-bold\">Overview</h5>\n" +
         "          <div class=\"text-text text-pretty\">\n" +
         "            <p>\n" +
-        "              In my early years, I was working on standalone projects for clients who wanted to integrate Privy's digital signature solutions but do not have the manpower to do it.\n" +
+        "              Privy is Indonesia's pioneer in digital signature and identity solutions. <br/>In my early years, I was working on standalone projects for clients who wanted to integrate Privy's digital signature solutions but do not have the manpower to do it.\n" +
         "              As a backend, I built the APIs for both front end or mobile app. Most of our works was for credit card applications such as Mandiri, CIMB, and BNI.\n" +
         "              My responsibilites are often related to dashboard and user registration. The general flow is: a customer will select their preffered card and fill in their personal info.\n" +
         "              Then, I use our internal registration API and generate a PDF containing the paperwork -- where the user will automatically sign it.\n" +
@@ -102,19 +114,19 @@ const companies = [
         "\n" +
         "\n" +
         "          <h5 class=\"font-bold text-heading mt-10\">Responsibilites/Achievements</h5>\n" +
-        "          <ul class=\"list-disc gap-3 text-text\">\n" +
+        "          <ul class=\"list-disc list-inside gap-3 text-text \">\n" +
         "            <li>Created a modular user-registration module, enabling customization of signup flows and data requirements to unique needs</li>\n" +
-        "            <li>Developed a flexible document-signing, stamping, and meterai (tax-stamp) system that supports multiple user roles and customizable approval workflows</li>\n" +
-        "            <li>Conducted mentoring, code reviews, and pair programming to speed up onboarding for junior and new engineers</li>\n" +
-        "            <li>Performed massive query refactors to reduce response time from above 100ms to 30-40ms, complying with company’s SLA</li>\n" +
-        "            <li>Resolved a critical race condition under high concurrency by migrating shared state into request-scoped storage</li>\n" +
-        "            <li>Designed a Ruby gem for approval workflows and email notifications, enabling its use across multiple projects and reducing development time</li>\n" +
-        "            <li>Implemented basic callback and notification system with Kafka</li>\n" +
-        "            <li>Wrote various automated tests using RSpec</li>\n" +
-        "            <li>Maintained a centralized logging service leveraging Firebase Database and MongoDB, improving log visibility and speeding up debugging under high-throughput conditions</li>\n" +
-        "            <li>Built a high-throughput Redis-backed worker queue that processes thousands of jobs per second with sub-second latency</li>\n" +
-        "            <li>Participated on a CSR initiative to develop a ride-hailing–style safety app connecting users to vetted volunteers and police, enhancing emergency response coordination and delivering a trusted support channel</li>\n" +
-        "            <li>Fixing issues and perform integration with monitoring tools such as Datadog, SonarQube, Sentry, Rollbar</li>\n" +
+        "            <li class=\"mt-5\">Developed a flexible document-signing, stamping, and meterai (tax-stamp) system that supports multiple user roles and customizable approval workflows</li>\n" +
+        "            <li class=\"mt-5\">Conducted mentoring, code reviews, and pair programming to speed up onboarding for junior and new engineers</li>\n" +
+        "            <li class=\"mt-5\">Performed massive query refactors to reduce response time from above 100ms to 30-40ms, complying with company’s SLA</li>\n" +
+        "            <li class=\"mt-5\">Resolved a critical race condition under high concurrency by migrating shared state into request-scoped storage</li>\n" +
+        "            <li class=\"mt-5\">Designed a Ruby gem for approval workflows and email notifications, enabling its use across multiple projects and reducing development time</li>\n" +
+        "            <li class=\"mt-5\">Implemented basic callback and notification system with Kafka</li>\n" +
+        "            <li class=\"mt-5\">Wrote various automated tests using RSpec</li>\n" +
+        "            <li class=\"mt-5\">Maintained a centralized logging service leveraging Firebase Database and MongoDB, improving log visibility and speeding up debugging under high-throughput conditions</li>\n" +
+        "            <li class=\"mt-5\">Built a high-throughput Redis-backed worker queue that processes thousands of jobs per second with sub-second latency</li>\n" +
+        "            <li class=\"mt-5\">Participated on a CSR initiative to develop a ride-hailing–style safety app connecting users to vetted volunteers and police, enhancing emergency response coordination and delivering a trusted support channel</li>\n" +
+        "            <li class=\"mt-5\">Fixing issues and perform integration with monitoring tools such as Datadog, SonarQube, Sentry, Rollbar</li>\n" +
         "          </ul>",
     techStacks: [
       { text: "Golang", logo: appConfig.site.logo.golang },
@@ -146,11 +158,11 @@ const companies = [
         "            I worked here for 3 and half day a week. I decided to leave because I need to focus on my <a href=\"https://repository.ukdw.ac.id/373/\" class=\"text-accent\" target=\"_blank\">undergraduate thesis</a>.\n" +
         "          </p>\n" +
         "          <h5 class=\"font-bold text-heading mt-10\">What I Built</h5>\n" +
-        "          <ul class=\"list-disc text-text\">\n" +
+        "          <ul class=\"list-disc list-inside text-text\">\n" +
         "            <li>A customized pocket book app for Borobudur Park staff—providing offline access to SOPs, schedules, and announcements to improve on-site coordination</li>\n" +
-        "            <li>A flexible SMS blast tool that supports dynamic audience segmentation and templating</li>\n" +
-        "            <li>Partnered in building a hospital invoicing platform that syncs with patient records to automate claims processing and accelerate revenue cycles</li>\n" +
-        "            <li>Initiated one of the core products of <a href=\"https://slidemoment.id/\" class=\"text-accent\">SlideMoment.id</a>, an app that scrapes Instagram posts by hashtag in real time, aggregates user-generated photos, and renders them in a live slideshow—enhancing guest engagement at weddings, birthdays and corporate events</li>\n" +
+        "            <li class=\"mt-5\">A flexible SMS blast tool that supports dynamic audience segmentation and templating</li>\n" +
+        "            <li class=\"mt-5\">Partnered in building a hospital invoicing platform that syncs with patient records to automate claims processing and accelerate revenue cycles</li>\n" +
+        "            <li class=\"mt-5\">Initiated one of the core products of <a href=\"https://slidemoment.id/\" class=\"text-accent\">SlideMoment.id</a>, an app that scrapes Instagram posts by hashtag in real time, aggregates user-generated photos, and renders them in a live slideshow—enhancing guest engagement at weddings, birthdays and corporate events</li>\n" +
         "          </ul>",
     techStacks: [
       {text: "Laravel", logo: appConfig.site.logo.laravel},
