@@ -197,8 +197,8 @@ const companies = [
         "            <br/>\n" +
         "            <p>My online presence can also be found in Construct 2 <a href=\"https://www.facebook.com/groups/constructindo\" target=\"_blank\">facebook group</a>.\n" +
         "              I served as one of the active admin and contributor. In 2020, Dicoding Indonesia offered us to be their mentor in game development\n" +
-        "              academy titled <a href=\"https://www.dicoding.com/academies/47\" target=\"blank\">\"Menjadi Game Developer Expert\"</a>.\n" +
-        "              With approximately 140 hours of content, A number of 3000-ish people took the class before it was closed due to the engine is marked as obsolete by the developer.\n" +
+        "              academy titled <a href=\"https://www.dicoding.com/academies/47\" target=\"blank\">\"Menjadi Game Developer Expert\"</a> and <a href=\"https://www.dicoding.com/academies/65\" target=\"_blank\">\"Belajar Membuat Game dengan Construct 2\"</a>.\n" +
+        "             With approximately 70 hours of content, a number of 7800-ish people took the class before it was closed due to the engine is marked as obsolete by the developer.\n" +
         "            </p>\n" +
         "          </div>",
     techStacks: [
@@ -223,7 +223,7 @@ const companies = [
         "\n" +
         "            <br/>\n" +
         "            <p>\n" +
-        "              Every year I also actively participated <a href=\"https://globalgamejam.org/\" target=\"_blank\"  > Global Game Jam</a>. An event where we build a game in 48 hours with total strangers.\n" +
+        "              Every year, I also actively participated <a href=\"https://globalgamejam.org/\" target=\"_blank\"  > Global Game Jam</a>. An event where we build a game in 48 hours with total strangers.\n" +
         "              I participated for 4 times. The games I made during the jam can be viewed on their<a href=\"https://v3.globalgamejam.org/users/punto-damar-p\" target=\"_blank\"  > page</a>.\n" +
         "              We sometimes held our own jams too. For example to <a href=\"https://youtu.be/FiT2tM3Glac?t=410\" target=\"_blank\"  >celebrate Indonesia's independence day</a>.\n" +
         "            </p>\n" +
@@ -231,9 +231,15 @@ const companies = [
         "            <br/>\n" +
         "            <p>\n" +
         "              We also succesfully initiated and held <a href=\"https://id.techinasia.com/ingame-indonesian-indie-game-festival\" target=\"_blank\"  >Indonesia Indie Game Festival (IN.GAME)</a>, a gamedev metup and showcase for every indie game studio in Indonesia.\n" +
-        "              Here, I was responsible for building the <a href=\"http://ingamefest.com/\" target=\"_blank\"  >landing page and registration</a>,\n" +
+        "              Here, I was responsible for building the <a href=\"http://ingamefest.com/\" target=\"_blank\"  >landing and registration site</a>,\n" +
         "              and <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\"  > mentored a game programming workshop for beginner</a>. Of course, I participated in the <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\">game jam session</a> too.\n" +
         "            </p>\n" +
+        "            <h5 class=\"font-bold text-heading mt-10\">Publications</h5>\n" +
+        "            <ul class=\"list-disc list-inside\">\n" +
+        "              <li>Tech In Asia: <a href=\"https://id.techinasia.com/ingame-indonesian-indie-game-festival\" target=\"_blank\">IN.GAME Indonesia Indie Game Festival – Bukti Nyata Industri Game yang Tengah Berkembang</a></li>\n" +
+        "              <li class='mt-5 md:mt-0'>IDN Times: <a href=\"https://duniaku.idntimes.com/geek/culture/in-game-festival-2016-pesta-game-indie-indonesia-00-hjc4x-ch6zp3\" target=\"_blank\">IN.GAME Festival 2016, Serunya Pesta Game Indie Terbesar di Indonesia!</a></li>\n" +
+        "              <li class='mt-5 md:mt-0'>IDN TImes: <a href=\"https://duniaku.idntimes.com/geek/culture/in-game-festival-2016-2-00-hjc4x-qkzcyd\">IN.GAME Festival 2016 Siap Digelar, Ajang Kumpul Lebih dari 50 Studio Game Indonesia!</a></li>\n" +
+        "            </ul> "+
         "          </div>"
   }
 ]
