@@ -25,18 +25,8 @@
 
 
           <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">
-
-            <!--                <img class="size-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/330px-PHP-logo.svg.png" alt="php">-->
-            <image-hover text="Golang" :src="appConfig.site.logo.golang"/>
-            <image-hover text="Nuxt" :src="appConfig.site.logo.nuxt"/>
-            <image-hover text="Tailwind CSS" :src="appConfig.site.logo.tailwind"/>
-            <image-hover text="Vue.js" :src="appConfig.site.logo.vue"/>
-            <image-hover text="Ruby on Rails" :src="appConfig.site.logo.rails"/>
-            <image-hover text="Typescript" :src="appConfig.site.logo.typescript"/>
-            <image-hover text="React.js" :src="appConfig.site.logo.react"/>
-
-            <!--                <img class="size-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png" alt="ruby">-->
-
+            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>
+            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>
           </div>
         </div>
       </div>

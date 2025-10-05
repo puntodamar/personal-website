@@ -25,7 +25,10 @@ export default defineAppConfig({
             technopartner: "/technopartner.png",
             laravel: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
             jquery: "https://icon.icepanel.io/Technology/svg/jQuery.svg",
-            mysql: "https://upload.wikimedia.org/wikipedia/commons/archive/5/51/20220908220043%21Mysql.svg"
+            mysql: "https://upload.wikimedia.org/wikipedia/commons/archive/5/51/20220908220043%21Mysql.svg",
+            bootstrap: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/330px-Bootstrap_logo.svg.png",
+            github: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+            linkedin: "https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
 
         }
     }
