@@ -45,7 +45,11 @@
 
         </aside>
 
-        <article class="min-w-0 hidden md:block md:col-span-8 prose" v-html="c.description"/>
+        <article class="min-w-0 hidden md:block md:col-span-8 prose" v-html="c.description">
+
+        </article>
+
+
       </div>
     </section>
 
@@ -95,7 +99,7 @@ const companies = [
         "\n" +
         "            <br/>\n" +
         "            <p>\n" +
-        "              We also created an event ticketing system for <a href=\"https://www.cimbniaga.co.id/id/personal/kartu-kredit/promo/cathay-pacific-travel-fair\" class=\"text-accent\" target=\"_blank\">CIMB Cathay Pacific Travel Fair</a>\n" +
+        "              We also created an event ticketing system for <a href=\"https://www.cimbniaga.co.id/id/personal/kartu-kredit/promo/cathay-pacific-travel-fair\"target=\"_blank\">CIMB Cathay Pacific Travel Fair</a>\n" +
         "              where customers can book discounted plane tickets with their credit card. Depending on the card, they can either use temporary limit increase, travel points, payment cashback, or receive coupons.\n" +
         "            </p>\n" +
         "\n" +
@@ -155,14 +159,14 @@ const companies = [
         "          <p class=\"text-text\">\n" +
         "            Technopartner Indonesia is a software house owned by my upperclassmen in college.\n" +
         "            I started working here as an intern for 3 months. The owner acknowledged my qualities and what I can offer to the team, so he offered me a part-time job.\n" +
-        "            I worked here for 3 and half day a week. I decided to leave because I need to focus on my <a href=\"https://repository.ukdw.ac.id/373/\" class=\"text-accent\" target=\"_blank\">undergraduate thesis</a>.\n" +
+        "            I worked here for 3 and half day a week. I decided to leave because I need to focus on my <a href=\"https://repository.ukdw.ac.id/373/\" target=\"_blank\">undergraduate thesis</a>.\n" +
         "          </p>\n" +
         "          <h5 class=\"font-bold text-heading mt-10\">What I Built</h5>\n" +
         "          <ul class=\"list-disc list-inside text-text\">\n" +
         "            <li>A customized pocket book app for Borobudur Park staff—providing offline access to SOPs, schedules, and announcements to improve on-site coordination</li>\n" +
         "            <li class=\"mt-5\">A flexible SMS blast tool that supports dynamic audience segmentation and templating</li>\n" +
         "            <li class=\"mt-5\">Partnered in building a hospital invoicing platform that syncs with patient records to automate claims processing and accelerate revenue cycles</li>\n" +
-        "            <li class=\"mt-5\">Initiated one of the core products of <a href=\"https://slidemoment.id/\" class=\"text-accent\">SlideMoment.id</a>, an app that scrapes Instagram posts by hashtag in real time, aggregates user-generated photos, and renders them in a live slideshow—enhancing guest engagement at weddings, birthdays and corporate events</li>\n" +
+        "            <li class=\"mt-5\">Initiated one of the core products of <a href=\"https://slidemoment.id/\"  >SlideMoment.id</a>, an app that scrapes Instagram posts by hashtag in real time, aggregates user-generated photos, and renders them in a live slideshow—enhancing guest engagement at weddings, birthdays and corporate events</li>\n" +
         "          </ul>",
     techStacks: [
       {text: "Laravel", logo: appConfig.site.logo.laravel},
@@ -170,6 +174,70 @@ const companies = [
       {text: "MySQL", logo: appConfig.site.logo.mysql},
       {text: "Bootstrap", logo: appConfig.site.logo.bootstrap},
     ]
+  },
+  {
+    name: "BikinGame.com",
+    logo: appConfig.site.logo.bikingame,
+    href: "https://www.facebook.com/bikingame",
+    yearsOfEmployment: "2015 - 2018",
+    role: "Owner",
+    description: "          <div class=\"text-pretty text-text\"><h5 class=\"font-bold text-heading\">Overview</h5>\n" +
+        "            <p>\n" +
+        "              BikinGame.com is a website containing free game programming tutorials using <a href=\"https://unity.com/\" target=\"_blank\">Unity 3D</a> and <a href=\"https://www.construct.net/en\" target=\"_blank\">Construct 2</a>.\n" +
+        "              This paved the road for me to be quite known in the community (at that time) and made me invited to be <a\n" +
+        "                href=\"https://www.facebook.com/punto.d.p/posts/10202619932737616\" target=\"_blank\">seminar speaker</a> and workshop mentor in <a href=\"https://drive.google.com/file/d/1Cx6y5cdR9CB7o1JMZ2uoqEuRzA7uN6H8/view?usp=sharing\" target=\"_blank\">company</a>, <a href=\"https://www.facebook.com/bikingame/photos/pb.100064652861369.-2207520000/2670956369596552/?type=3\" target=\"_blank\">government</a>, and even\n" +
+        "              <a href=\"https://www.facebook.com/ngoquangducc/photos/pb.100068499472580.-2207520000/1263075787090388/?type=3\" target=\"_blank\">national-wide</a> setting held by BEKRAF Indonesian Creative Economy Agency <span class=\"italic\">(the page is now hacked tho)</span>.\n" +
+        "              Sadly, most of the media has been lost to time and I dont have the backup :((. But hey! There are some left in\n" +
+        "              <a href=\"https://www.construct.net/en/users/60645/puntodamar/tutorials\" target=\"_blank\">Construct 2's official page</a> and my personal <a href=\"https://www.facebook.com/puntodamar/\" target=\"_blank\">facebook page</a>.\n" +
+        "            </p>\n" +
+        "            <br/>\n" +
+        "            <p>During this time, I published 2 books on game programming. One about <a href=\"https://www.gramedia.com/products/bikin-game-tanpa-coding-dengan-construct-2-cd\" target=\"_blank\">Construct 2</a> and the other one on\n" +
+        "              <a href=\"https://shopee.co.id/Buku-Panduan-Lengkap-Pemrograman-C-Untuk-Menguasai-Unity-Segala-Sesuatu-Yang-dibutuhkan-Untuk-Menguasai-Game-Engine-Unity-cd-Punto-Damar-i.889333257.42215087814\" target=\"_blank\">Unity 3D scripting</a>.\n" +
+        "              The books took massive hits, especially the Construct 2 one because it's often referenced in college undergraduate thesis to make education based game.\n" +
+        "              If you write <a href=\"https://www.google.com/search?q=punto+damar+construct+2&oq=punto+damar+construct+2\" class='italic' target=\"_blank\">\"punto damar construct 2\"</a> on google search query, you can find a lot of e-catalog libraries mentioning that the book exists in their repository, reflecting my deep expertise in the subject.\n" +
+        "            </p>\n" +
+        "\n" +
+        "            <br/>\n" +
+        "            <p>My online presence can also be found in Construct 2 <a href=\"https://www.facebook.com/groups/constructindo\" target=\"_blank\">facebook group</a>.\n" +
+        "              I served as one of the active admin and contributor. In 2020, Dicoding Indonesia offered us to be their mentor in game development\n" +
+        "              academy titled <a href=\"https://www.dicoding.com/academies/47\" target=\"blank\">\"Menjadi Game Developer Expert\"</a>.\n" +
+        "              With approximately 140 hours of content, A number of 3000-ish people took the class before it was closed due to the engine is marked as obsolete by the developer.\n" +
+        "            </p>\n" +
+        "          </div>",
+    techStacks: [
+      {text: "Unity", logo: appConfig.site.logo.unity},
+      {text: "Construct 2", logo: appConfig.site.logo.construct},
+      {text: "C#", logo: appConfig.site.logo.csharp},
+    ],
+  },
+  {
+    name: "GameLan",
+    logo: appConfig.site.logo.gamelan,
+    href: "https://www.instagram.com/gamelan.yk/?hl=en",
+    yearsOfEmployment: "2013 - 2018",
+    role: "Community Member",
+    description: "          <h5 class=\"font-bold text-heading\">Overview</h5>\n" +
+        "          <div class=\"text-text text-pretty\">\n" +
+        "            <p>\n" +
+        "              Gamelan is a game development community in Yogyakarta. I like to play video game so becoming a game developer is what I was aspired to be.\n" +
+        "              During our weekly meetup at Jogja Digital Valley (now IndigoHub Jogja), we share about our devlogs, tips n tricks, post mortem, marketing, and basically anything related to game development.\n" +
+        "              I also participated to be one of the speaker, talking about <a href=\"https://www.slideshare.net/slideshow/usability-testing-54551522/54551522\" target=\"_blank\"  >usability testing</a>.\n" +
+        "            </p>\n" +
+        "\n" +
+        "            <br/>\n" +
+        "            <p>\n" +
+        "              Every year I also actively participated <a href=\"https://globalgamejam.org/\" target=\"_blank\"  > Global Game Jam</a>. An event where we build a game in 48 hours with total strangers.\n" +
+        "              I participated for 4 times. The games I made during the jam can be viewed on their<a href=\"https://v3.globalgamejam.org/users/punto-damar-p\" target=\"_blank\"  > page</a>.\n" +
+        "              We sometimes held our own jams too. For example to <a href=\"https://youtu.be/FiT2tM3Glac?t=410\" target=\"_blank\"  >celebrate Indonesia's independence day</a>.\n" +
+        "            </p>\n" +
+        "\n" +
+        "            <br/>\n" +
+        "            <p>\n" +
+        "              We also succesfully initiated and held <a href=\"https://id.techinasia.com/ingame-indonesian-indie-game-festival\" target=\"_blank\"  >Indonesia Indie Game Festival (IN.GAME)</a>, a gamedev metup and showcase for every indie game studio in Indonesia.\n" +
+        "              Here, I was responsible for building the <a href=\"http://ingamefest.com/\" target=\"_blank\"  >landing page and registration</a>,\n" +
+        "              and <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\"  > mentored a game programming workshop for beginner</a>.\n" +
+        "            </p>\n" +
+        "          </div>"
   }
 ]
 </script>
