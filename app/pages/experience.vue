@@ -49,13 +49,10 @@
 
         </article>
 
-
       </div>
     </section>
 
     <drawer/>
-
-
 
   </div>
 </template>
@@ -163,8 +160,8 @@ const companies = [
         "          </p>\n" +
         "          <h5 class=\"font-bold text-heading mt-10\">What I Built</h5>\n" +
         "          <ul class=\"list-disc list-inside text-text\">\n" +
-        "            <li>A customized pocket book app for Borobudur Park staff—providing offline access to SOPs, schedules, and announcements to improve on-site coordination</li>\n" +
-        "            <li class=\"mt-5\">A flexible SMS blast tool that supports dynamic audience segmentation and templating</li>\n" +
+        "            <li><a href=\"https://apkpure.com/id/borobudur-buku-pintar/com.borobudur.mobile\" target=\"_blank\">Borobudur Buku Pintar</a>, a customized pocket book app for Borobudur Park staff—providing offline access to SOPs, schedules, and announcements to improve on-site coordination</li>\n" +
+        "            <li class=\"mt-5\"><a href=\"https://apkpure.net/texter-sms/com.technopartner.textersms\" target=\"_blank\">Texter SMS</a>, a flexible SMS blast tool that supports dynamic audience segmentation and templating</li>\n" +
         "            <li class=\"mt-5\">Partnered in building a hospital invoicing platform that syncs with patient records to automate claims processing and accelerate revenue cycles</li>\n" +
         "            <li class=\"mt-5\">Initiated one of the core products of <a href=\"https://slidemoment.id/\"  >SlideMoment.id</a>, an app that scrapes Instagram posts by hashtag in real time, aggregates user-generated photos, and renders them in a live slideshow—enhancing guest engagement at weddings, birthdays and corporate events</li>\n" +
         "          </ul>",
@@ -194,7 +191,7 @@ const companies = [
         "            <p>During this time, I published 2 books on game programming. One about <a href=\"https://www.gramedia.com/products/bikin-game-tanpa-coding-dengan-construct-2-cd\" target=\"_blank\">Construct 2</a> and the other one on\n" +
         "              <a href=\"https://shopee.co.id/Buku-Panduan-Lengkap-Pemrograman-C-Untuk-Menguasai-Unity-Segala-Sesuatu-Yang-dibutuhkan-Untuk-Menguasai-Game-Engine-Unity-cd-Punto-Damar-i.889333257.42215087814\" target=\"_blank\">Unity 3D scripting</a>.\n" +
         "              The books took massive hits, especially the Construct 2 one because it's often referenced in college undergraduate thesis to make education based game.\n" +
-        "              If you write <a href=\"https://www.google.com/search?q=punto+damar+construct+2&oq=punto+damar+construct+2\" class='italic' target=\"_blank\">\"punto damar construct 2\"</a> on google search query, you can find a lot of e-catalog libraries mentioning that the book exists in their repository, reflecting my deep expertise in the subject.\n" +
+        "              If you type <a href=\"https://www.google.com/search?q=punto+damar+construct+2&oq=punto+damar+construct+2\" class='italic' target=\"_blank\">\"punto damar construct 2\"</a> on google search query, you can find a lot of e-catalog libraries mentioning that the book exists in their repository, reflecting my deep expertise in the subject.\n" +
         "            </p>\n" +
         "\n" +
         "            <br/>\n" +
@@ -219,8 +216,8 @@ const companies = [
     description: "          <h5 class=\"font-bold text-heading\">Overview</h5>\n" +
         "          <div class=\"text-text text-pretty\">\n" +
         "            <p>\n" +
-        "              Gamelan is a game development community in Yogyakarta. I like to play video game so becoming a game developer is what I was aspired to be.\n" +
-        "              During our weekly meetup at Jogja Digital Valley (now IndigoHub Jogja), we share about our devlogs, tips n tricks, post mortem, marketing, and basically anything related to game development.\n" +
+        "              Gamelan is a game development community in Yogyakarta. I like to play video games so becoming a game developer is what I was aspired to be.\n" +
+        "              During our weekly meetup at Jogja Digital Valley (now IndigoHub Jogja), we share about our devlogs, tips n tricks, <span class=\"italic\">post mortem</span>, marketing, and basically anything related to game development.\n" +
         "              I also participated to be one of the speaker, talking about <a href=\"https://www.slideshare.net/slideshow/usability-testing-54551522/54551522\" target=\"_blank\"  >usability testing</a>.\n" +
         "            </p>\n" +
         "\n" +
@@ -235,7 +232,7 @@ const companies = [
         "            <p>\n" +
         "              We also succesfully initiated and held <a href=\"https://id.techinasia.com/ingame-indonesian-indie-game-festival\" target=\"_blank\"  >Indonesia Indie Game Festival (IN.GAME)</a>, a gamedev metup and showcase for every indie game studio in Indonesia.\n" +
         "              Here, I was responsible for building the <a href=\"http://ingamefest.com/\" target=\"_blank\"  >landing page and registration</a>,\n" +
-        "              and <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\"  > mentored a game programming workshop for beginner</a>.\n" +
+        "              and <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\"  > mentored a game programming workshop for beginner</a>. Of course, I participated in the <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\">game jam session</a> too.\n" +
         "            </p>\n" +
         "          </div>"
   }
