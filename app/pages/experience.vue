@@ -105,9 +105,9 @@ const companies = [
         "            <br/>\n" +
         "            <p>\n" +
         "              After around 2 years, the company feel that it's ineffective to have dedicated manpower to handle each and every client applications.\n" +
-        "              So, we formed a team aiming to  reduce both the manpower needed and the development time from at least 2-3 months in no time at all.\n" +
+        "              So, we formed a team aiming to  reduce both the manpower needed and the development time from at least 2-3 months in no time at all. \n" +
         "              The team and I made a templating application. A customizable, premade application that will cater every clients' user registration and document signing requirements.\n" +
-        "              Thanks to the effort of the whole team, I believe it grew to become one of the company's biggest revenue generating application.\n" +
+        "              Thanks to the effort of the whole team, now it's just a matter of business decisions and paperworks before the app is live on production. I believe it grew to become one of the company's biggest revenue generating application.\n" +
         "              It managed to handle hundreds of clients with throughput as high as <span class=\"underline\">1000 RPM</span> per client.\n" +
         "            </p>\n" +
         "\n" +
