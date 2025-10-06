@@ -53,11 +53,13 @@
     </section>
 
     <drawer/>
+    <scroll-to-top/>
 
   </div>
 </template>
 <script setup>
 import {ArrowTopRightOnSquareIcon} from "@heroicons/vue/24/outline";
+import ScrollToTop from "~/components/ScrollToTop.vue";
 useSeoMeta({ title: "Punto Damar | Experience" })
 const appConfig = useAppConfig()
 const drawerContent = reactive({open: false, company: null})
