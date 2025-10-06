@@ -1,7 +1,7 @@
 <template>
 
   <div class="pt-14 px-8 mt-20 mx-auto max-w-7xl pb-20">
-    <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left">
+    <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left ">
       Side Projects
     </h1>
 
