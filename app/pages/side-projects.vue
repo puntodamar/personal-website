@@ -121,14 +121,14 @@ const projects = [
         "            <ul class=\"list-disc list-inside\">\n" +
         "              <li>Developed the landing and online submission site (the page is now dead tho)</li>\n" +
         "              <li class='mt-5 md:mt-0'>Act as the <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\">workshop mentor</a>  to introduce game development for beginners</li>\n" +
-        "              <li class='mt-5 md:mt-0'>Participate in game jam, where  I built a <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\" target=\"_blank\">2D hack n slash game</a> in 48 hours with total strangers</li>\n" +
+        "              <li class='mt-5 md:mt-0'>Participated in game jam, where  I built a <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\" target=\"_blank\">2D hack n slash game</a> in 48 hours with total strangers</li>\n" +
         "            </ul>\n" +
         "\n" +
         "            <h5 class=\"font-bold text-heading mt-10\">Publications</h5>\n" +
         "            <ul class=\"list-disc list-inside\">\n" +
         "              <li>Tech In Asia: <a href=\"https://id.techinasia.com/ingame-indonesian-indie-game-festival\" target=\"_blank\">IN.GAME Indonesia Indie Game Festival – Bukti Nyata Industri Game yang Tengah Berkembang</a></li>\n" +
         "              <li class='mt-5 md:mt-0'>IDN Times: <a href=\"https://duniaku.idntimes.com/geek/culture/in-game-festival-2016-pesta-game-indie-indonesia-00-hjc4x-ch6zp3\" target=\"_blank\">IN.GAME Festival 2016, Serunya Pesta Game Indie Terbesar di Indonesia!</a></li>\n" +
-        "              <li class='mt-5 md:mt-0'>IDN TImes: <a href=\"https://duniaku.idntimes.com/geek/culture/in-game-festival-2016-2-00-hjc4x-qkzcyd\">IN.GAME Festival 2016 Siap Digelar, Ajang Kumpul Lebih dari 50 Studio Game Indonesia!</a></li>\n" +
+        "              <li class='mt-5 md:mt-0'>IDN Times: <a href=\"https://duniaku.idntimes.com/geek/culture/in-game-festival-2016-2-00-hjc4x-qkzcyd\">IN.GAME Festival 2016 Siap Digelar, Ajang Kumpul Lebih dari 50 Studio Game Indonesia!</a></li>\n" +
         "            </ul>",
     techStacks: [
       {text: "Laravel", logo: appConfig.site.logo.laravel},
