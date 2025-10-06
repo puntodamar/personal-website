@@ -6,13 +6,13 @@
         <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
           <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
             <div class="mx-auto size-30 mb-10 lg:hidden">
-              <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
-                <img
-                    src="/portrait-head.png"
-                    alt="portrait"
-                    class="block h-full w-full object-cover"
-                />
-              </div>
+              <div
+                  class="size-30 rounded-full ring-1 ring-heading bg-center bg-cover"
+                  style="background-image: url('/portrait-head.png')"
+                  aria-label="portrait"
+                  role="img"
+              />
+
             </div>
 
             <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
