@@ -5,13 +5,16 @@
 
         <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
           <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
-            <div class="mx-auto size-30 mb-10 overflow-hidden rounded-full outline-[0.1rem] outline-heading lg:hidden">
-              <img
-                  src="/portrait-head.png"
-                  alt="portrait"
-                  class="w-auto object-cover drop-shadow-xl"
-              />
+            <div class="mx-auto size-30 mb-10 lg:hidden">
+              <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
+                <img
+                    src="/portrait-head.png"
+                    alt="portrait"
+                    class="block h-full w-full object-cover"
+                />
+              </div>
             </div>
+
             <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading sm:text-7xl text-center lg:text-left block">Punto Damar</h1>
             <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
             <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
