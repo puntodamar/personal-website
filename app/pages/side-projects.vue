@@ -83,7 +83,7 @@ definePageMeta({
 const projects = [
   {
     name: "Jogja Smash Sports",
-    href: "https://github.com/puntodamar/laravel-smashsports",
+    href: "#",
     description: "          <div class=\"text-text text-pretty\">\n" +
         "            <h5 class=\"font-bold text-heading\">Overview</h5>\n" +
         "            <p>Inspired by my struggle to play badminton regularly, I'm acting as if I am a business owner targeting busy professionals who optimize every minute to play sports. No detours, no delays.\n" +
@@ -121,7 +121,7 @@ const projects = [
         "            <ul class=\"list-disc list-inside\">\n" +
         "              <li>Developed the landing and online submission site (the page is now dead tho)</li>\n" +
         "              <li class='mt-5 md:mt-0'>Act as the <a href=\"https://www.dicoding.com/events/85\" target=\"_blank\">workshop mentor</a>  to introduce game development for beginners</li>\n" +
-        "              <li class='mt-5 md:mt-0'>Participate in game jam, where  I built a <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\" target=\"_blank\">2D hack n slash game</a> in 48 hours with total strangers.</li>\n" +
+        "              <li class='mt-5 md:mt-0'>Participate in game jam, where  I built a <a href=\"https://gamejolt.com/games/final-block-fantasy/86382\" target=\"_blank\">2D hack n slash game</a> in 48 hours with total strangers</li>\n" +
         "            </ul>\n" +
         "\n" +
         "            <h5 class=\"font-bold text-heading mt-10\">Publications</h5>\n" +
