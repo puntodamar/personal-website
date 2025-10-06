@@ -2,10 +2,17 @@
   <div class="pointer-events-none hidden md:block absolute inset-y-0 right-0 w-1/2">
     <div class="h-full hidden lg:block ">
       <div class="absolute  bottom-0 xl:top-20 lg:flex lg:items-center lg:justify-center">
+<!--        <NuxtImg-->
+<!--            src="/photo-full-downsized.png"-->
+<!--            alt="portrait"-->
+<!--            class="w-auto h-auto max-w-full sm:max-w-full md:max-w-none md:max-h-none shrink-0"-->
+<!--            densities="1x 2x"-->
+<!--        />-->
+
         <img
             src="/photo-full-downsized.png"
             alt="portrait"
-            class="w-auto object-cover drop-shadow-xl opacity-10 lg:opacity-100"
+            class="w-auto h-auto max-w-full sm:max-w-full md:max-w-none md:max-h-none shrink-0"
         />
       </div>
     </div>

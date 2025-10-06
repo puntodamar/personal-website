@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-0 md:pt-14 px-8 mx-auto max-w-7xl">
+  <div class="px-8 mx-auto max-w-7xl">
 
     <div class="flex flex-col items-center justify-center h-screen lg:items-start">
       <div class="md:my-auto lg:my-0">
@@ -13,9 +13,11 @@
           <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-6 py-3" v-for="d in data" :key="d.field">
             <dt class="lg:basis-40 lg:shrink-0 font-semibold">{{d.field}}</dt>
             <dd class="break-words">
-              <a :href="href(d)" class="underline-offset-2 font-light text-sm md:text-base text-text hover:text-accent-2 block mx-auto max-w-[22ch] text-center [text-wrap:balance] break-words hyphens-auto">
+              <a :href="href(d)"
+                 class="underline-offset-2 font-light text-sm md:text-base text-text hover:text-accent-2 block mx-auto max-w-[22ch] text-center [text-wrap:balance] break-words hyphens-auto md:inline md:max-w-none md:text-left md:[text-wrap:pretty] md:break-normal md:hyphens-none">
                 {{ d.value }}
               </a>
+
 
             </dd>
           </div>
