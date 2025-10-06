@@ -46,6 +46,10 @@
 
 @layer base {
     a { color: var(--link); }
+
+    html, body {
+        @apply bg-bg ;
+    }
 }
 
 
