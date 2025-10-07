@@ -26,13 +26,13 @@
     />
   </div>
 
-  <div class="absolute inset-x-0 bottom-0 overflow-hidden hidden [@media(orientation:landscape)]:block">
-    <img
-        src="/portrait-head.png"
-        alt="portrait"
-        class="block mx-auto object-cover opacity-5"
-    />
-  </div>
+<!--  <div class="absolute inset-x-0 bottom-0 overflow-hidden hidden [@media(orientation:landscape)]:block">-->
+<!--    <img-->
+<!--        src="/portrait-head.png"-->
+<!--        alt="portrait"-->
+<!--        class="block mx-auto object-cover opacity-5"-->
+<!--    />-->
+<!--  </div>-->
 
 
 
