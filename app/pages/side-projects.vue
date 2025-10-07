@@ -83,7 +83,7 @@ definePageMeta({
 const projects = [
   {
     name: "Jogja Smash Sports",
-    href: "#",
+    href: "https://www.linkedin.com/posts/punto-damar-p-6b11b0107_badminton-fullstack-laravel-activity-7372090712458317825-7VJ7",
     description: "          <div class=\"text-text text-pretty\">\n" +
         "            <h5 class=\"font-bold text-heading\">Overview</h5>\n" +
         "            <p>Inspired by my struggle to play badminton regularly, I'm acting as if I am a business owner targeting busy professionals who optimize every minute to play sports. No detours, no delays.\n" +
