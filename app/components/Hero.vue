@@ -14,13 +14,13 @@
                 />
               </div>
             </div>
-            <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left [@media(orientation:landscape)]:text-2xl">Punto Damar</h1>
+            <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left">Punto Damar</h1>
             <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
-            <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left [@media(orientation:landscape)]:text-sm">
+            <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
               A fullstack engineer who always strive for the best and hungry for new knowledge.
             </p>
 
-            <div class="dark:font-light text-pretty text-app mt-8 text-center lg:text-left [@media(orientation:landscape)]:text-sm">
+            <div class="dark:font-light text-pretty text-app mt-8 text-center lg:text-left">
               <p>Thrives in agile and fast-paced startup settings, contributing to projects with tight deadlines.</p>
               <p class="mt-5">Skilled in handling complex system configurations and with multiple business workflows.</p>
               <p class="mt-5 ">Able to build systems that scale and perform reliably under high usage.</p>
