@@ -60,7 +60,11 @@
 <script setup>
 import {ArrowTopRightOnSquareIcon} from "@heroicons/vue/24/outline";
 import ScrollToTop from "~/components/ScrollToTop.vue";
-useSeoMeta({ title: "Punto Damar | Experience" })
+useSeoMeta({
+  title: "Punto Damar | Experience",
+  description: 'A fullstack engineer who always strive for the best and hungry for new knowledge',
+  ogDescription: 'A fullstack engineer who always strive for the best and hungry for new knowledge',
+})
 const appConfig = useAppConfig()
 const drawerContent = reactive({open: false, company: null})
 provide('drawer', drawerContent)

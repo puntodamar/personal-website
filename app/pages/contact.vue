@@ -52,5 +52,9 @@ const href = (d) => {
   }
 }
 
-useSeoMeta({ title: "Punto Damar | Contact" })
+useSeoMeta({
+  title: "Punto Damar | Contact",
+  description: 'A fullstack engineer who always strive for the best and hungry for new knowledge',
+  ogDescription: 'A fullstack engineer who always strive for the best and hungry for new knowledge',
+})
 </script>
