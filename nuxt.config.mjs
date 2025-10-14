@@ -25,8 +25,10 @@ export default defineNuxtConfig({
               }
           ],
           meta: [
-              // Helps browsers pick correct form controls, etc.
-              { name: "color-scheme", content: "light dark" }
+              { name: "color-scheme", content: "light dark" },
+              { name: 'description', content: 'A fullstack engineer who always strive for the best and hungry for new knowledge' },
+              { property: 'og:description', content: 'A fullstack engineer who always strive for the best and hungry for new knowledge' },
+              { property: 'og:title', content: 'Punto Damar P.' },
           ],
           script: [
               {
