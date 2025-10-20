@@ -36,6 +36,7 @@ export default defineAppConfig({
             csharp: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/250px-Logo_C_sharp.svg.png",
             smashsports: "/smashsports.png",
             inertia: "https://inertiajs.com/favicon.ico",
+            pinia: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pinialogo.svg/250px-Pinialogo.svg.png"
 
         }
     }

@@ -45,7 +45,6 @@
 
         <article class="min-w-0 hidden md:block md:col-span-8 ">
           <div class="text-text text-pretty prose" v-html="c.description">
-
           </div>
         </article>
 
@@ -81,6 +80,34 @@ definePageMeta({
 
 
 const projects = [
+  {
+    name: "Guess The Pokemon!",
+    href: "https://guess-the-pokemon-nuxt.vercel.app/",
+    description: "" +
+        "            <p>\n" +
+        "              <h5 class=\"font-bold text-heading\">Overview</h5>\n" +
+        "              To celebrate the launch of <a href=\"https://www.nintendo.com/us/store/products/pokemon-legends-z-a-nintendo-switch-2-edition-switch-2/\" target=\"_blank\">Pokemon Legends: Z-A</a>, on Nitendo Switch \n" +
+        "              I decided to craft a pokemon guessing quiz utilizing the open source <a href=\"https://pokeapi.co/\" target=\"_blank\">Pokemon API</a>.\n" +
+        "\n" +
+        "              <h5 class=\"font-bold text-heading mt-10\">Features</h5>\n" +
+        "              <ul class=\"list-disc list-inside\">\n" +
+        "                <li>light/dark mode</li>\n" +
+        "                <li>responsive design for mobile & desktop</li>\n" +
+        "                <li>pokemon generation selector</li>\n" +
+        "                <li>random fun fact about the pokemon (desktop only)</li>\n" +
+        "                <li>play the pokemon cry</li>\n" +
+        "              </ul>\n" +
+        "\n" +
+        "              <h5 class=\"font-bold text-heading mt-10\">Planned Improvements</h5>\n" +
+        "              I still need to figure out some styling issues on iPhone & iPad devices.\n" +
+        "              Also I'm planning to transition to GraphQL because the response is too bloated. But anyway, the game is playable!\n" +
+        "            </p>",
+    techStacks: [
+      { text: "Nuxt.js", logo: appConfig.site.logo.nuxt },
+      { text: "Tailwind CSS", logo: appConfig.site.logo.tailwind },
+      { text: "Pinia", logo: appConfig.site.logo.pinia },
+    ]
+  },
   {
     name: "Jogja Smash Sports",
     href: "https://www.linkedin.com/posts/punto-damar-p-6b11b0107_badminton-fullstack-laravel-activity-7372090712458317825-7VJ7",
