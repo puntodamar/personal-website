@@ -36,7 +36,13 @@ export default defineAppConfig({
             csharp: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/250px-Logo_C_sharp.svg.png",
             smashsports: "/smashsports.png",
             inertia: "https://inertiajs.com/favicon.ico",
-            pinia: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pinialogo.svg/250px-Pinialogo.svg.png"
+            pinia: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pinialogo.svg/250px-Pinialogo.svg.png",
+            websocket: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/WebSocket_colored_logo.svg/250px-WebSocket_colored_logo.svg.png",
+            madeindonesia:"/madeindonesia.jpeg",
+            alpine: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alpinejs.png",
+            livewire: "https://www.iocod.com/section/stack/Livewire.webp",
+            swiper: "https://swiperjs.com/images/swiper-logo.svg",
+            figma: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/250px-Figma-logo.svg.png"
 
         }
     }

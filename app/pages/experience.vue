@@ -46,7 +46,6 @@
         </aside>
 
         <article class="min-w-0 hidden md:block md:col-span-8 prose" v-html="c.description">
-
         </article>
 
       </div>
@@ -81,6 +80,27 @@ definePageMeta({
 
 
 const companies = [
+  {
+    name: "MadeIndonesia",
+    logo:appConfig.site.logo.madeindonesia,
+    yearsOfEmployment:"Oct 2025 (present)",
+    href: "https://madeindonesia.com/",
+    role: "Front End Developer",
+    description: "" +
+        "          <h5 class=\"text-heading font-bold\">Overview</h5>\n" +
+        "          <p>\n" +
+        "           MadeIndonesia is an english-speaking software house focusing in European markets. We provide all kinds of IT services, ranging from web development, outsourcing, data-entry, design, game, video editing, etc.\n" +
+        "            I work as a Laravel front-end development handling Netherlands market (mostly).\n" +
+        "          </p>",
+    techStacks: [
+      { text: "Laravel", logo: appConfig.site.logo.laravel },
+      { text: "Tailwind", logo: appConfig.site.logo.tailwind},
+      { text: "Alpine.js", logo: appConfig.site.logo.alpine},
+      { text: "Livewire", logo: appConfig.site.logo.livewire},
+      { text: "Swiper.js", logo: appConfig.site.logo.swiper},
+      { text: "Figma", logo: appConfig.site.logo.figma},
+    ]
+  },
   {
     name: "Privy Identitas Digital",
     logo: appConfig.site.logo.privy,
@@ -145,7 +165,8 @@ const companies = [
       {text: "Rufus Scheduler", logo: appConfig.site.logo.ruby},
       {text: "Apache Kafka", logo: appConfig.site.logo.kafka},
       {text: "Docker", logo: appConfig.site.logo.docker},
-      {text: "Jenkins", logo: appConfig.site.logo.jenkins}
+      {text: "Jenkins", logo: appConfig.site.logo.jenkins},
+      {text: "Websocket",logo: appConfig.site.logo.jenkins}
     ]
   },
   {
