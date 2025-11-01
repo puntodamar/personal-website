@@ -35,7 +35,7 @@ import Portrait from "~/components/Portrait.vue";
 
 const data = [
   {field: "Email", value: "punto.damar2@gmail.com"},
-  {field: "Phone", value: "+6285729084638"},
+  {field: "Phone", value: "+6281947164825"},
   {field: "LinkedIn", value: "https://www.linkedin.com/in/punto-damar-p-6b11b0107/"},
   {field: "Address", value: "Bantul, D.I. Yogyakarta, Indonesia"},
 ]
