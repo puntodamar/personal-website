@@ -88,10 +88,12 @@ const companies = [
     role: "Front End Developer",
     description: "" +
         "          <h5 class=\"text-heading font-bold\">Overview</h5>\n" +
-        "          <p>\n" +
-        "           MadeIndonesia is an english-speaking software house focusing in European markets. We provide all kinds of IT services, ranging from web development, outsourcing, data-entry, design, game, video editing, etc.\n" +
-        "            I work as a Laravel front-end development handling Netherlands market (mostly).\n" +
-        "          </p>",
+        "          <div class=\"text-text text-pretty\">\n" +
+        "            <p>\n" +
+        "              MadeIndonesia is an english-speaking software house focusing on European markets. We provide all kinds of IT services, ranging from web development, outsourcing, data-entry, design, game, video editing, etc.\n" +
+        "              I work as a Laravel front-end development handling Netherlands market (mostly).\n" +
+        "            </p>\n" +
+        "          </div>",
     techStacks: [
       { text: "Laravel", logo: appConfig.site.logo.laravel },
       { text: "Tailwind", logo: appConfig.site.logo.tailwind},
