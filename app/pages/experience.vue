@@ -12,7 +12,7 @@
           class="mt-20 grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-16 md:gap-y-0"
       >
 
-        <aside class="min-w-0 self-start md:sticky md:top-16 md:col-span-4">
+        <aside class="min-w-0 self-start md:sticky md:top-24 md:col-span-4">
           <div class="flex flex-col min-w-0 items-center md:items-start text-center md:text-left gap-y-5">
             <!-- logos -->
             <img :src="c.logo" class="size-8 lg:hidden" />
@@ -46,6 +46,7 @@
         </aside>
 
         <article class="min-w-0 hidden md:block md:col-span-8 prose" v-html="c.description">
+
         </article>
 
       </div>
@@ -91,9 +92,21 @@ const companies = [
         "          <div class=\"text-text text-pretty\">\n" +
         "            <p>\n" +
         "              MadeIndonesia is an english-speaking software house focusing on European markets. We provide all kinds of IT services, ranging from web development, outsourcing, data-entry, design, game, video editing, etc.\n" +
-        "              I work as a Laravel front-end development handling Netherlands market (mostly).\n" +
+        "              I work as a Laravel front-end development handling Dutch market (mostly).\n" +
         "            </p>\n" +
-        "          </div>",
+        "          </div>\n" +
+        "          <h5 class=\"text-heading font-bold mt-10\">What I Built</h5>" +
+        "          <ul class=\"list-disc list-inside gap-3 text-text\">\n" +
+        "            <li >\n" +
+        "              <a href=\"https://www.thecontentgroup.nl/en/about-en/\" target=\"_blank\">The Content Group</a> is a content creation agency based on Netherlands. We did a full redesign of their four website\n" +
+        "              <a href=\"https://www.baaz.nl/\">Baaz</a>, <a href=\"https://www.digifotopro.nl/en\" target=\"_blank\">Digifotopro</a>, <a\n" +
+        "                href=\"https://www.digifotostarter.nl/en\" target=\"_blank\">Digifotostarter</a>, and <a href=\"https://www.winmagpro.nl/en\" target=\"_blank\">WinmagPRO</a> along with an admin page to manage every content they publish.\n" +
+        "    </li>\n" +
+        "    <li class=\"mt-5\">\n" +
+        "      Established in 1959, <a href=\"https://www.hurkmansbv.nl/\" target=\"_blank\">The Hurkmans Groep</a> is a prominent family-owned civil engineering and infrastructure company based in the Netherlands.\n" +
+        "      Hurkmans is one of our long-term client where we actively develop internal admin web application to streamline business operations, including data management, reporting, and workflow administration for internal teams.\n" +
+        "    </li>\n" +
+        "  </ul>",
     techStacks: [
       { text: "Laravel", logo: appConfig.site.logo.laravel },
       { text: "Tailwind", logo: appConfig.site.logo.tailwind},
@@ -101,6 +114,8 @@ const companies = [
       { text: "Livewire", logo: appConfig.site.logo.livewire},
       { text: "Swiper.js", logo: appConfig.site.logo.swiper},
       { text: "Figma", logo: appConfig.site.logo.figma},
+      {text: "Filament", logo: appConfig.site.logo.filament},
+      {text: "Wordpress", logo: appConfig.site.logo.wordpress}
     ]
   },
   {

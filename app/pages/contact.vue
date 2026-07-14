@@ -1,7 +1,7 @@
 <template>
-  <div class="px-8 mx-auto max-w-7xl">
+  <div class="px-8">
 
-    <div class="flex flex-col items-center justify-center h-screen lg:items-start">
+    <div class="flex flex-col items-center justify-center h-dvh lg:items-start overflow-hidden">
       <div class="md:my-auto lg:my-0">
         <h1 class="text-5xl font-semibold tracking-tight text-pretty text-accent-2 sm:text-7xl text-center lg:text-left [@media(orientation:landscape)]:text-2xl">
           Contact Me

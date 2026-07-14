@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto h-dvh w-dvw">
       <div class="relative z-10 pt-5 lg:pt-14 w-full px-6 lg:px-0 sm:max-w-lg md:w-screen sm:mx-auto sm:text-center lg:max-w-2xl lg:mx-0 lg:text-left [@media(orientation:landscape)]:pt-15">
 
         <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
@@ -8,7 +8,7 @@
             <div class="mx-auto size-30 mb-10 lg:hidden [@media(orientation:landscape)]:hidden">
               <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
                 <img
-                    src="/portrait-head.png"
+                    src="/images/portrait-head.png"
                     alt="portrait"
                     class="block h-full w-full object-cover"
                 />
@@ -26,7 +26,7 @@
               <p class="mt-5 ">Able to build systems that scale and perform reliably under high usage</p>
             </div>
 
-            <div class="flex flex-row justify-center md:justify-start mt-20 gap-2 md:gap-5">
+            <div class="flex flex-row justify-center lg:justify-start mt-20 gap-2 md:gap-5">
               <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>
               <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>
             </div>

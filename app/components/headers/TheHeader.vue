@@ -1,5 +1,5 @@
 <template>
-  <header :class="headerClasses">
+  <header class="pb-4" :class="headerClasses">
     <desktop-header
         :navigation="navigation"
         :title="appConfig.site.title"
@@ -26,7 +26,11 @@ const props = defineProps({
   absolute: {type: Boolean, default: true},
 })
 
-const headerClasses = computed(() => props.absolute ? 'inset-x-0 top-0 z-50 absolute' : 'inset-x-0 top-0 z-50' )
+const headerClasses = computed(() =>
+  props.absolute
+    ? 'fixed inset-x-0 top-0 z-50 bg-app'
+    : 'fixed inset-x-0 top-0 z-50 bg-app'
+)
 const navigation = [
   { name: 'About Me', href: '/', route: 'index' },
   { name: 'Experience', href: '/experience', route: 'experience' },
