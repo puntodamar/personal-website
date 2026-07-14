@@ -168,7 +168,7 @@ const companies = [
       {text: "Apache Kafka", logo: appConfig.site.logo.kafka},
       {text: "Docker", logo: appConfig.site.logo.docker},
       {text: "Jenkins", logo: appConfig.site.logo.jenkins},
-      {text: "Websocket",logo: appConfig.site.logo.jenkins}
+      {text: "Websocket",logo: appConfig.site.logo.websocket}
     ]
   },
   {
