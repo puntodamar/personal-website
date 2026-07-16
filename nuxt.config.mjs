@@ -25,7 +25,10 @@ export default defineNuxtConfig({
                 }
             ],
             meta: [
-                {name: "color-scheme", content: "light dark"},
+                {
+                    name: "color-scheme",
+                    content: "light dark"
+                },
                 {
                     name: 'description',
                     content: 'A fullstack engineer who always strive for the best and hungry for new knowledge'
@@ -34,7 +37,14 @@ export default defineNuxtConfig({
                     property: 'og:description',
                     content: 'A fullstack engineer who always strive for the best and hungry for new knowledge'
                 },
-                {property: 'og:title', content: 'Punto Damar P.'},
+                {
+                    property: 'og:title',
+                    content: 'Punto Damar P.'
+                },
+                {
+                    name: 'google-site-verification',
+                    content: 'dvl_kmQDFqUYeGLo6rWTxp0u0wZCcmoUQoilqtFzBHw',
+                },
             ],
             script: [
                 {
