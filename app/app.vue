@@ -8,7 +8,29 @@
 <script setup>
 import { Analytics } from '@vercel/analytics/nuxt';
 useHead({
-  // htmlAttrs: { class: 'dark' },
-  bodyAttrs: { class: 'antialiased' }
+  htmlAttrs: { lang: 'en' },
+  bodyAttrs: { class: 'antialiased' },
+  titleTemplate: (title) =>
+      title
+          ? `${title} | Punto Damar`
+          : 'Punto Damar',
+
+  link: [
+    {
+      rel: 'icon',
+      href: '/favicon.ico'
+    }
+  ]
+})
+
+useSeoMeta({
+  applicationName: 'Punto Damar P.',
+  author: 'Punto Damar P.',
+  creator: 'Punto Damar P.',
+  publisher: 'Punto Damar P.',
+  robots: 'index,follow',
+  twitterCard: 'summary_large_image',
+  themeColor: '#101828',
+  colorScheme: 'dark'
 })
 </script>

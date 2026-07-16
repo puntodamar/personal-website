@@ -52,5 +52,14 @@ const href = (d) => {
   }
 }
 
-useSeoMeta({ title: "Punto Damar | Contact" })
+useSeoMeta({
+  title: 'Contact',
+  description: 'Learn more about Punto Damar, Full Stack Software Engineer.',
+  ogTitle: 'Contact',
+  ogDescription: 'Learn more about Punto Damar.',
+  ogImage: '/images/portrait-head.png',
+  twitterTitle: 'Contact',
+  twitterDescription: 'Learn more about Punto Damar.',
+  twitterImage: '/images/portrait-head.png'
+})
 </script>
