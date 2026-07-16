@@ -38,7 +38,7 @@ export default defineAppConfig({
             inertia: "https://inertiajs.com/favicon.ico",
             pinia: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pinialogo.svg/250px-Pinialogo.svg.png",
             websocket: "/images/websocket.svg",
-            madeindonesia:"/images/madeindonesia.jpeg",
+            madeindonesia: "/images/madeindonesia.jpeg",
             alpine: "images/alpine.svg",
             livewire: "https://www.iocod.com/section/stack/Livewire.webp",
             swiper: "https://swiperjs.com/images/swiper-logo.svg",

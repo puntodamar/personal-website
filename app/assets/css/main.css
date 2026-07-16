@@ -40,12 +40,20 @@
     --color-heading: #F59E0B;
 }
 
-@utility font-heading { font-family: var(--font-heading); }
-@utility bg-app      { background-color: var(--color-bg); }
-@utility text-app    { color: var(--color-text); }
+@utility font-heading {
+    font-family: var(--font-heading);
+}
+@utility bg-app {
+    background-color: var(--color-bg);
+}
+@utility text-app {
+    color: var(--color-text);
+}
 
 @layer base {
-    a { color: var(--link); }
+    a {
+        color: var(--link);
+    }
 
     html, body {
         @apply bg-bg ;

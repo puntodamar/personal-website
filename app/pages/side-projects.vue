@@ -64,13 +64,13 @@ import {ArrowTopRightOnSquareIcon} from "@heroicons/vue/24/outline";
 import ScrollToTop from "~/components/ScrollToTop.vue";
 
 useSeoMeta({
-    title: 'Side Projects',
-    description: 'Learn more about Punto Damar, Full Stack Software Engineer.',
+    title: 'Side Projects | Punto Damar P.',
+    description: 'Explore the side projects of Punto Damar P., showcasing creativity and technical skills.',
     ogTitle: 'Side Projects',
-    ogDescription: 'Learn more about Punto Damar P.',
+    ogDescription: 'Explore the side projects of Punto Damar P., showcasing creativity and technical skills.',
     ogImage: '/images/portrait-head.png',
     twitterTitle: 'Side Projects',
-    twitterDescription: 'Learn more about Punto Damar P.',
+    twitterDescription: 'Explore the side projects of Punto Damar P., showcasing creativity and technical skills.',
     twitterImage: '/images/portrait-head.png'
 })
 

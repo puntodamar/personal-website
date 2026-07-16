@@ -1,52 +1,60 @@
 <template>
-  <div>
-    <div class="mx-auto h-dvh w-dvw">
-      <div class="relative z-10 pt-5 lg:pt-14 w-full px-6 lg:px-0 sm:max-w-lg md:w-screen sm:mx-auto sm:text-center lg:max-w-2xl lg:mx-0 lg:text-left [@media(orientation:landscape)]:pt-15">
+    <div>
+        <div class="mx-auto h-dvh w-dvw">
+            <div
+                class="relative z-10 pt-5 lg:pt-14 w-full px-6 lg:px-0 sm:max-w-lg md:w-screen sm:mx-auto sm:text-center lg:max-w-2xl lg:mx-0 lg:text-left [@media(orientation:landscape)]:pt-15">
 
-        <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
-          <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
-            <div class="mx-auto size-30 mb-10 lg:hidden [@media(orientation:landscape)]:hidden">
-              <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
-                <img
-                    src="/images/portrait-head.png"
-                    alt="portrait"
-                    class="block h-full w-full object-cover"
-                />
-              </div>
-            </div>
-            <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left">Punto Damar</h1>
-            <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
-            <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
-              A fullstack engineer who always strive for the best and hungry for new knowledge
-            </p>
+                <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
+                    <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
+                        <div class="mx-auto size-30 mb-10 lg:hidden [@media(orientation:landscape)]:hidden">
+                            <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
+                                <img
+                                    src="/images/portrait-head.png"
+                                    alt="portrait"
+                                    class="block h-full w-full object-cover"
+                                />
+                            </div>
+                        </div>
+                        <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left">
+                            Punto Damar</h1>
+                        <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
+                        <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
+                            A fullstack engineer who always strive for the best and hungry for new knowledge
+                        </p>
 
-            <div class="dark:font-light text-pretty text-app mt-8 text-center lg:text-left">
-              <p>Thrives in agile and fast-paced startup settings, contributing to projects with tight deadlines</p>
-              <p class="mt-5">Skilled in handling complex system configurations and with multiple business workflows</p>
-              <p class="mt-5 ">Able to build systems that scale and perform reliably under high usage</p>
-            </div>
+                        <div class="dark:font-light text-pretty text-app mt-8 text-center lg:text-left">
+                            <p>Thrives in agile and fast-paced startup settings, contributing to projects with tight
+                                deadlines</p>
+                            <p class="mt-5">Skilled in handling complex system configurations and with multiple business
+                                workflows</p>
+                            <p class="mt-5 ">Able to build systems that scale and perform reliably under high usage</p>
+                        </div>
 
-            <div class="flex flex-row justify-center lg:justify-start mt-20 gap-2 md:gap-5">
-              <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>
-              <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>
+                        <div class="flex flex-row justify-center lg:justify-start mt-20 gap-2 md:gap-5">
+                            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full">
+                                <image-hover text="Github" :src="appConfig.site.logo.github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank">
+                                <image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/>
+                            </a>
+                        </div>
+                        <!--          <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">-->
+                        <!--            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>-->
+                        <!--            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>-->
+                        <!--          </div>-->
+                    </div>
+                </div>
             </div>
-            <!--          <div class="grid grid-cols-7 gap-5 mt-20 justify-center place-items-center md:place-items-start">-->
-            <!--            <a href="https://github.com/puntodamar" target="_blank" class="border-white rounded-full"> <image-hover text="Github" :src="appConfig.site.logo.github"/></a>-->
-            <!--            <a href="https://www.linkedin.com/in/punto-damar-p-6b11b0107/" target="_blank"><image-hover text="Linkedin" :src="appConfig.site.logo.linkedin"/></a>-->
-            <!--          </div>-->
-          </div>
         </div>
-      </div>
-    </div>
 
-    <portrait/>
-  </div>
+        <portrait/>
+    </div>
 </template>
 
 <script setup>
 
-  import ImageHover from "~/components/ImageHover.vue";
-  import Portrait from "~/components/Portrait.vue";
+import ImageHover from "~/components/ImageHover.vue";
+import Portrait from "~/components/Portrait.vue";
 
-  const appConfig = useAppConfig();
+const appConfig = useAppConfig();
 </script>

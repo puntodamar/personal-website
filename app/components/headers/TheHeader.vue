@@ -1,41 +1,41 @@
 <template>
-  <header class="pb-4" :class="headerClasses">
-    <desktop-header
-        :navigation="navigation"
-        :title="appConfig.site.title"
-        :logo="appConfig.site.logo.nuxt"
-    />
+    <header class="pb-4" :class="headerClasses">
+        <desktop-header
+            :navigation="navigation"
+            :title="appConfig.site.title"
+            :logo="appConfig.site.logo.nuxt"
+        />
 
-    <mobile-header
-        :navigation="navigation"
-        :title="appConfig.site.title"
-        :logo="appConfig.site.logo.nuxt"
-    />
+        <mobile-header
+            :navigation="navigation"
+            :title="appConfig.site.title"
+            :logo="appConfig.site.logo.nuxt"
+        />
 
-    <page-theme class="absolute top-6 right-20"/>
-  </header>
+        <page-theme class="absolute top-6 right-20"/>
+    </header>
 </template>
 <script setup>
-import { ref } from 'vue'
+import {ref} from 'vue'
 
 import MobileHeader from "~/components/headers/MobileHeader.vue";
 import DesktopHeader from "~/components/headers/DesktopHeader.vue";
 
 const appConfig = useAppConfig()
 const props = defineProps({
-  absolute: {type: Boolean, default: true},
+    absolute: {type: Boolean, default: true},
 })
 
 const headerClasses = computed(() =>
-  props.absolute
-    ? 'fixed inset-x-0 top-0 z-50 bg-app'
-    : 'fixed inset-x-0 top-0 z-50 bg-app'
+    props.absolute
+        ? 'fixed inset-x-0 top-0 z-50 bg-app'
+        : 'fixed inset-x-0 top-0 z-50 bg-app'
 )
 const navigation = [
-  { name: 'About Me', href: '/', route: 'index' },
-  { name: 'Experience', href: '/experience', route: 'experience' },
-  { name: 'Side Projects', href: '/side-projects', route: 'side-projects' },
-  { name: 'Contact', href: '/contact', route: 'contact' },
+    {name: 'About Me', href: '/', route: 'index'},
+    {name: 'Experience', href: '/experience', route: 'experience'},
+    {name: 'Side Projects', href: '/side-projects', route: 'side-projects'},
+    {name: 'Contact', href: '/contact', route: 'contact'},
 ]
 
 const mobileMenuOpen = ref(false)

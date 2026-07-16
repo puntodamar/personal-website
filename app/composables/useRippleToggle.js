@@ -9,7 +9,7 @@ export function useRippleToggle(options = {}) {
         opacity = 0.9,
         zIndex = 9999,
     } = options
-
+    
     // Returns a handler: (MouseEvent|KeyboardEvent, onMidpoint?: () => void) => void
     return (e, onMidpoint) => {
         // Respect reduced motion
@@ -18,10 +18,10 @@ export function useRippleToggle(options = {}) {
             onMidpoint?.()
             return
         }
-
+        
         const vw = window.innerWidth
         const vh = window.innerHeight
-
+        
         // Compute origin (click point if mouse; otherwise button center)
         let x, y
         const target = e?.currentTarget
@@ -36,15 +36,15 @@ export function useRippleToggle(options = {}) {
             x = vw / 2
             y = vh / 2
         }
-
+        
         // Max radius: distance to farthest viewport corner
         const maxX = Math.max(x, vw - x)
         const maxY = Math.max(y, vh - y)
         const radius = Math.hypot(maxX, maxY)
         const size = radius * 2
-
+        
         const fillColor = getFillColor()
-
+        
         // Build the ripple node
         const ripple = document.createElement('div')
         Object.assign(ripple.style, {
@@ -62,16 +62,16 @@ export function useRippleToggle(options = {}) {
             transition: `transform ${duration}ms ease-out, opacity ${duration + 150}ms ease-out`,
         })
         document.body.appendChild(ripple)
-
+        
         // Animate
         requestAnimationFrame(() => {
             ripple.style.transform = 'translate(-50%, -50%) scale(1)'
             ripple.style.opacity = '0'
         })
-
+        
         // Fire your action near the beginning (feels snappy)
         window.setTimeout(() => onMidpoint?.(), Math.min(140, duration / 3))
-
+        
         // Cleanup
         window.setTimeout(() => ripple.remove(), duration + 200)
     }
