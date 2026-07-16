@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import process from "node:process";
 
 export default defineNuxtConfig({
     css: ["~/assets/css/main.css"],
@@ -64,6 +65,11 @@ export default defineNuxtConfig({
     
     modules: ["@nuxtjs/color-mode", '@nuxtjs/seo'],
     
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+        }
+    },
     site: {
         url: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
         name: 'Punto Damar',
