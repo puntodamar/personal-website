@@ -15,7 +15,7 @@
                 <aside class="min-w-0 self-start md:sticky md:top-24 md:col-span-4">
                     <div class="flex flex-col min-w-0 items-center md:items-start text-center md:text-left gap-y-5">
                         <!-- logos -->
-                        <img :src="c.logo" class="size-8 lg:hidden"/>
+                        <img :src="c.logo" class="size-18 lg:hidden"/>
                         <div class="flex flex-col items-center gap-y-3 md:flex-row md:items-start md:gap-x-5 w-full">
                             <img :src="c.logo" class="size-20 hidden lg:block"/>
                             <div class="w-full md:w-auto">
