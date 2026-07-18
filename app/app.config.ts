@@ -14,7 +14,7 @@ export default defineAppConfig({
             ruby: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ruby_logo.png/250px-Ruby_logo.png",
             mongodb: "https://mongodb-js.github.io/leaf/mongodb-leaf_128x128.png",
             postgresql: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/250px-Postgresql_elephant.svg.png",
-            firebase: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/240px-Firebase_icon.svg.png",
+            firebase: "/images/firebase.svg",
             minio: "https://awsmp-logos.s3.amazonaws.com/c6cbc20d-0d79-4256-bbd1-dbb8d219945b/8433cadab9c1c3920e06e695055fb019.png",
             awss3: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/250px-Amazon-S3-Logo.svg.png",
             googleStorage: "https://upload.wikimedia.org/wikipedia/commons/d/df/Google_Cloud_storage.svg",

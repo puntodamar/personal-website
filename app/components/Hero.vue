@@ -6,17 +6,17 @@
 
                 <div class="relative mx-6 my-auto h-screen lg:mt-0 flex items-center">
                     <div class=" max-w-2xl lg:mx-0 lg:max-w-xl ">
-                        <div class="mx-auto size-30 mb-10 lg:hidden [@media(orientation:landscape)]:hidden">
-                            <div class="relative overflow-hidden rounded-full ring-1 ring-heading">
+                        <div class="mx-auto mb-5 lg:hidden [@media(orientation:landscape)]:hidden">
+                            <div class="mx-auto size-18 relative overflow-hidden rounded-full ring-1 ring-heading">
                                 <img
                                     src="/images/portrait-head.png"
                                     alt="portrait"
-                                    class="block h-full w-full object-cover"
+                                    class=" h-full w-full object-cover block"
                                 />
                             </div>
                         </div>
-                        <h1 class="text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left">
-                            Punto Damar</h1>
+                        <h1 class="text-3xl lg:text-5xl font-semibold tracking-tight text-pretty text-heading block  text-center sm:text-7xl lg:text-left">
+                            Punto Damar P.</h1>
                         <!--          <div class="border-b-2 md:border-b-5  dark:border-text mt-5 max-w-100 mx-auto lg:mx-0"></div>-->
                         <p class="mt-8 text-lg font-medium text-pretty text-accent sm:text-xl/8 text-center lg:text-left">
                             A fullstack engineer who always strive for the best and hungry for new knowledge
